@@ -1,0 +1,4 @@
+row 1 = idle
+row 2 = attack
+row 3 = hit
+row 3 = death
