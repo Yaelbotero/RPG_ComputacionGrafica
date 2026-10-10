@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ab31def35e03ec1409534f48683d60e0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312391
+  packageName: 2D Pixel Art Platformer - Plain
+  packageVersion: 1.0
+  assetPath: Assets/2D Pixel Art Platformer - Plain/prefabs/3D_block/grass_block_3.prefab
+  uploadId: 777782
