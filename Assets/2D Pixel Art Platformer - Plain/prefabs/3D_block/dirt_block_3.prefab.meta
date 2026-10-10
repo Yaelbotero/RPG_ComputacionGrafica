@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 77c0a14956bab3b4fb556d2429b317ce
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312391
+  packageName: 2D Pixel Art Platformer - Plain
+  packageVersion: 1.0
+  assetPath: Assets/2D Pixel Art Platformer - Plain/prefabs/3D_block/dirt_block_3.prefab
+  uploadId: 777782
