@@ -1300,6 +1300,7 @@ MonoBehaviour:
   velocidad: 6.5
   horizontal: 0
   attack: 0
+  bloqueado: 0
   speedSalto: 8
   checkPiso: {fileID: 1757252367}
   layerPiso:
@@ -3666,6 +3667,9 @@ MonoBehaviour:
   "se\xF1alDialogo": {fileID: 535136268}
   dialogoPanel: {fileID: 1207752542}
   textoDialogo: {fileID: 1133185386}
+  dialogo: {fileID: 11400000, guid: 4f754f2d878d9f247ac8d7e3c587f8fd, type: 2}
+  barista: {fileID: 2131172577}
+  dialogoNoche: {fileID: 11400000, guid: 7a3d597c8e777c34d92c3ee688f8559d, type: 2}
   lineasDeDialogo:
   - 'PROTA: Hey... '
   - "\xBF?: Hola, mi nombre es Helena, y perd\xF3n, no te dejaba de mirar puesto
@@ -3688,6 +3692,7 @@ MonoBehaviour:
   - "PROTA: \xBFTe parece si me das un tercio de las recompensas y nos vemos ma\xF1ana
     al amanecer? "
   - "HELENA: Por supuesto, mas que perfecto, nos vemos ma\xF1ana. "
+  destinoAlTerminar: {x: 9.45, y: -3.171}
 --- !u!61 &1441670375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4588,6 +4593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TextManager
   dialogoPanel: {fileID: 192925563}
   dialogoText: {fileID: 1385955396}
+  dialogo: {fileID: 11400000, guid: b65f55d52ef1b5442bb2da6cce7629e0, type: 2}
   lineasDialogo:
   - "BARISTA(Jorge): \xA1Mujer de malas ma\xF1as largo de aqui.!"
   - "BARISTA(Jorge): Esa chica es muy extra\xF1a. tiene ojos de angel y pelo de diablo.
