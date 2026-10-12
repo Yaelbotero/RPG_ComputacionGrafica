@@ -28,6 +28,8 @@ public class PuebloMananaSecuencia : MonoBehaviour
     [SerializeField] private float velocidadJugador = 4f;
     [SerializeField] private float retrasoJugadorAlSalir = 1f;
     [SerializeField] private float tiempoEscritura = 0.04f;
+    [SerializeField] private GameObject canvasFinal;
+    [SerializeField] private float retrasoCanvasFinal = 2f;
     [SerializeField] private string[] lineas =
     {
         "PROTA: Hola, muy buenos días, iniciemos el viaje.",
@@ -186,6 +188,9 @@ public class PuebloMananaSecuencia : MonoBehaviour
         yield return CorrerJugador(jugadorFinal);
         yield return new WaitUntil(() => nun.CaminataTerminada);
         if (movimiento != null) movimiento.enabled = true;
+
+        yield return new WaitForSeconds(retrasoCanvasFinal);
+        if (canvasFinal != null) canvasFinal.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other) => ActualizarRango(other, true);

@@ -4344,6 +4344,7 @@ MonoBehaviour:
     al amanecer? "
   - "HELENA: Por supuesto, mas que perfecto, nos vemos ma\xF1ana. "
   destinoAlTerminar: {x: 9.45, y: -3.171}
+  caminarAlTerminar: 1
 --- !u!61 &1441670375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5382,21 +5383,7 @@ MonoBehaviour:
   dialogoPanel: {fileID: 192925563}
   dialogoText: {fileID: 1385955396}
   dialogo: {fileID: 11400000, guid: b65f55d52ef1b5442bb2da6cce7629e0, type: 2}
-  lineasDialogo:
-  - "BARISTA(Jorge): \xA1Mujer de malas ma\xF1as largo de aqui.!"
-  - "BARISTA(Jorge): Esa chica es muy extra\xF1a. tiene ojos de angel y pelo de diablo.
-    No puede ser mas que una bruja. "
-  - 'PROTA: Mmmmmm.'
-  - "BARISTA(Jorge): Disculpa forastero \xBFpodrias leer el texto en tu espada?"
-  - 'PROTA: ...'
-  - 'PROTA: Por su maldad, un alma fue castigada. Gracias a un noble caballero, atrapada
-    por siempre en la nada...'
-  - 'PROTA: No busques el maldito espejo, pues si atrapa tu reflejo, tu vida en una
-    eterna agonia se convertira.'
-  - 'BARISTA(Jorge): Efectivamente. Hubo un mago adorador de Moloch, un ser vivo
-    que atormento esta comarca...'
-  - "BARISTA(Jorge): Hasta que por fin alguien logro encerrar a esta bestia en una
-    carcel magica...JAJAJA \xA1CUENTO DE HADAS!"
+  lineasDialogo: []
 --- !u!4 &2131172578
 Transform:
   m_ObjectHideFlags: 0

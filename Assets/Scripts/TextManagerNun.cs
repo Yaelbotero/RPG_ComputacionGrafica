@@ -20,6 +20,7 @@ public class TextManagerNun : MonoBehaviour
     private Movimiento movimientoJugador;
     private SpriteRenderer spriteRendererMonja;
     [SerializeField] private Vector2 destinoAlTerminar = new Vector2(9.45f, -3.171f);
+    [SerializeField] private bool caminarAlTerminar = true;
     private NunController nunController;
     private bool yaSeFue = false;
 
@@ -56,10 +57,13 @@ public class TextManagerNun : MonoBehaviour
             }
             if (indiceLinea >= lineasDeDialogo.Length)
             {
-                MirarAlLadoOpuesto();
                 elJugadorEstaHablando = false;
                 BloquearJugador(false);
-                CaminarAlDestino();
+                if (caminarAlTerminar)
+                {
+                    MirarAlLadoOpuesto();
+                    CaminarAlDestino();
+                }
             }
         }
     }
