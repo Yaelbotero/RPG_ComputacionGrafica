@@ -19,4 +19,9 @@ public class ManagerEscenas : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Mañana()
+    {
+        SceneManager.LoadScene("Pueblo Mañana", LoadSceneMode.Single);
+    }
 }
