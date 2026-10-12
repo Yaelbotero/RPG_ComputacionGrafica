@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using Inventory.UI;
+using UnityEngine.UI;
 
 public class UIInventoryPage : MonoBehaviour
 {
@@ -14,7 +16,24 @@ public class UIInventoryPage : MonoBehaviour
      //[SerializeField]
     //private Sprite someSprite;
 
+    [SerializeField]
+    private UIInventoryDescription ItemDescription;
+
+    [SerializeField]
+    private MouseFollower mouseFollower;
+
      List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
+
+     public Sprite image;
+     public int quantity;
+     public string tittle, description;
+
+     private void Awake()
+    {
+        Hide();
+        ItemDescription.ResetDescription();
+        mouseFollower.Toggle(false);
+    }
 
     public void InitializeInventoryUI(int inventorySize)
     {
@@ -45,6 +64,7 @@ public class UIInventoryPage : MonoBehaviour
     {
         DeselectAllItems();
         item.Select();
+        ItemDescription.SetDescription(image, tittle, description);
     }
 
     private void HandleshowItemActions(UIInventoryItem item)
@@ -54,7 +74,7 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleEndDrag(UIInventoryItem item)
     {
-
+        mouseFollower.Toggle(false);
     }
 
     private void HandleSwap(UIInventoryItem item)
@@ -64,12 +84,17 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleBeginDrag(UIInventoryItem item)
     {
-
+        mouseFollower.Toggle(true);
+        mouseFollower.SetData(image, quantity);
     }
+    
 
     public void Show()
         {
             gameObject.SetActive(true);
+            ItemDescription.ResetDescription();
+
+            listOfUIItems[0].SetData(image, quantity);
         }
 
     public void Hide()
