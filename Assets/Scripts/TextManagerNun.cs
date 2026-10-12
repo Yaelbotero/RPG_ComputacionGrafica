@@ -84,6 +84,7 @@ public class TextManagerNun : MonoBehaviour
     private IEnumerator AvisarAlLlegar()
     {
         yield return new WaitUntil(() => nunController.CaminataTerminada);
+        PlayerManager.puertaHabilitada = true;
         if (barista != null && dialogoNoche != null)
         {
             barista.IniciarDialogo(dialogoNoche);
