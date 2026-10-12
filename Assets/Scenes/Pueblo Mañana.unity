@@ -460,7 +460,7 @@ SpriteRenderer:
   m_SortingOrder: -10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8cc204ff1cb8a3f4ca2b357ed7680ab0, type: 3}
-  m_Color: {r: 0.7959965, g: 0.7236116, b: 0.9528302, a: 1}
+  m_Color: {r: 0.38412246, g: 0.9811321, b: 0.94027174, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -644,7 +644,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1732913798, guid: eaa42f295a599ce4cbe0f579a2e668ff, type: 3}
-  m_Color: {r: 0.5546355, g: 0.48162156, b: 0.745283, a: 1}
+  m_Color: {r: 0.8999577, g: 0.8632076, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movimiento
   rb: {fileID: 582063626}
-  velocidad: 6.5
+  velocidad: 4
   horizontal: 0
   attack: 0
   bloqueado: 0
@@ -1108,7 +1108,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3318188226485093758, guid: ae72133dacba6ec4eb33ecde48f50e56, type: 3}
-  m_Color: {r: 0.821214, g: 0.7738519, b: 0.8867924, a: 1}
+  m_Color: {r: 0.9585231, g: 0.9292453, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2126,7 +2126,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.52641726, g: 0.4255518, b: 0.6886792, a: 1}
+  m_Color: {r: 0.78660154, g: 0.68765575, b: 0.9528302, a: 1}
   m_Origin: {x: -10, y: -6, z: 0}
   m_Size: {x: 20, y: 6, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -2230,7 +2230,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1458135093, guid: eaa42f295a599ce4cbe0f579a2e668ff, type: 3}
-  m_Color: {r: 0.55381894, g: 0.47686014, b: 0.7169812, a: 1}
+  m_Color: {r: 0.86538297, g: 0.82155573, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2453,6 +2453,7 @@ GameObject:
   - component: {fileID: 1150052836}
   - component: {fileID: 1150052837}
   - component: {fileID: 1150052838}
+  - component: {fileID: 1150052844}
   m_Layer: 0
   m_Name: Nun
   m_TagString: Untagged
@@ -2473,7 +2474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NunController
   animator: {fileID: 1150052837}
-  velocidad: 2
+  velocidad: 3
   distanciaLlegada: 0.01
   parametroCaminar: Caminar
   parametroIdle: Idle
@@ -2506,7 +2507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150052835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 180d6833488abe9418b9ceb8a90488d5, type: 3}
   m_Name: 
@@ -2709,7 +2710,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 758900308273036243, guid: 3e3fb14817d582048b08f6cba3d3ba56, type: 3}
-  m_Color: {r: 0.9452306, g: 0.9103774, b: 1, a: 1}
+  m_Color: {r: 0.9741591, g: 0.9575472, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2736,6 +2737,37 @@ Transform:
   - {fileID: 496153891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150052844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150052835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a73189b6d0f4d41bb22b5aee5d5dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuebloMananaSecuencia
+  nun: {fileID: 1150052836}
+  nunSprite: {fileID: 1150052842}
+  jugador: {fileID: 582063622}
+  senalDialogo: {fileID: 496153889}
+  dialogoPanel: {fileID: 1768380423}
+  textoDialogo: {fileID: 89008636}
+  nunInicio: {x: 9.8, y: -3.171}
+  nunEncuentro: {x: 1.85, y: -3.171}
+  jugadorPuerta: {x: -4.28, y: -2.975}
+  jugadorEncuentro: {x: 0.08, y: -2.975}
+  nunFinal: {x: 12.6, y: -3.171}
+  jugadorFinal: {x: 11.05, y: -2.975}
+  esperaInicial: 1
+  velocidadJugador: 4
+  retrasoJugadorAlSalir: 1
+  tiempoEscritura: 0.04
+  lineas:
+  - "PROTA: Hola, muy buenos d\xEDas, iniciemos el viaje."
+  - 'HELENA: Por supuesto.'
 --- !u!1 &1209688981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,7 +3572,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2067993357, guid: eaa42f295a599ce4cbe0f579a2e668ff, type: 3}
-  m_Color: {r: 0.5901482, g: 0.4986205, b: 0.7830189, a: 1}
+  m_Color: {r: 0.8933834, g: 0.8443396, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4401,7 +4433,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1458135093, guid: eaa42f295a599ce4cbe0f579a2e668ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4591,7 +4623,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024363382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 717c278ecae5a864cb637ca79a13e5e4, type: 3}
   m_Name: 
@@ -4781,7 +4813,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 717057860, guid: eaa42f295a599ce4cbe0f579a2e668ff, type: 3}
-  m_Color: {r: 0.77643675, g: 0.7152901, b: 0.8867924, a: 1}
+  m_Color: {r: 0.93096054, g: 0.8915094, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
