@@ -200,7 +200,7 @@ public static class ConstructorInterfaz
         Transform t = canvas.transform;
 
         RectTransform panel = UI("Panel", t);
-        Ancla(panel, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 40), new Vector2(1500, 270));
+        Ancla(panel, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 40), new Vector2(1640, 340));
         Image fondo = panel.gameObject.AddComponent<Image>();
         fondo.sprite = ObtenerSpritePergamino();
         fondo.type = Image.Type.Sliced;
