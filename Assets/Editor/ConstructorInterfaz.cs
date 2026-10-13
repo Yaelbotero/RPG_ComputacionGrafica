@@ -44,7 +44,7 @@ public static class ConstructorInterfaz
         foreach (GameObject viejo in escena.GetRootGameObjects())
             if (viejo.name == "INTERFAZ" || viejo.name == "EventSystem") UnityEngine.Object.DestroyImmediate(viejo);
 
-        fuenteTitulos = null; // La fuente PermanentMarker del menu trae color morado propio (poco contraste): se usa la fuente por defecto en negrita.
+        fuenteTitulos = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/Fonts/Terminal16Unicode SDF.asset"); // fuente de todo el juego
         spriteUI = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
         spriteBlanco = ObtenerSpriteBlanco();
         prefabBotonOpcion = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/BotonOpcionPrefab.prefab");
@@ -138,9 +138,9 @@ public static class ConstructorInterfaz
         Ancla(barra.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(55, -98), new Vector2(530, 28));
 
         Image fondoOro = Perg("FondoOro", t);
-        Ancla(fondoOro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(320, 80));
-        TextMeshProUGUI oro = Texto("TextoOro", t, "Dinero: 0", 38, TintaOro, TextAlignmentOptions.Center);
-        Ancla(oro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(320, 80));
+        Ancla(fondoOro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(400, 90));
+        TextMeshProUGUI oro = Texto("TextoOro", t, "Dinero: 0", 34, TintaOro, TextAlignmentOptions.Center);
+        Ancla(oro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(400, 90));
 
         TextMeshProUGUI lugar = Texto("TextoZona", t, zona.ToUpperInvariant(), 26, Crema, TextAlignmentOptions.Center);
         Ancla(lugar.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -34), new Vector2(760, 40));
@@ -216,7 +216,7 @@ public static class ConstructorInterfaz
         nombre.rectTransform.anchoredPosition = new Vector2(40, 4);
         nombre.alignment = TextAlignmentOptions.Left;
 
-        TextMeshProUGUI texto = Texto("Texto", panel, "Texto del diálogo...", 36, Tinta, TextAlignmentOptions.TopLeft);
+        TextMeshProUGUI texto = Texto("Texto", panel, "Texto del diálogo...", 42, Tinta, TextAlignmentOptions.TopLeft);
         Estirar(texto.rectTransform, 40, 30, 40, 30);
 
         TextMeshProUGUI flecha = Texto("Flecha", panel, "▼", 36, TintaNombre, TextAlignmentOptions.Center);
@@ -602,7 +602,7 @@ public static class ConstructorInterfaz
         Canvas canvas = NuevoCanvas("Ayuda (solo vista previa)", padre, 100);
         TextMeshProUGUI txt = Texto("Texto", canvas.transform,
             "VISTA PREVIA  ·  F1-F4 grupo (Escena 1, 2, 3, Boss)  ·  N escenario normal  ·  C siguiente conversación  ·  K combate  ·  I inventario  ·  Esc pausa",
-            22, new Color32(255, 255, 255, 170), TextAlignmentOptions.Center);
+            15, new Color32(255, 255, 255, 170), TextAlignmentOptions.Center);
         Ancla(txt.rectTransform, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 4), new Vector2(1800, 30));
         return canvas.gameObject;
     }
@@ -796,7 +796,8 @@ public static class ConstructorInterfaz
         t.alignment = alineacion;
         t.textWrappingMode = TextWrappingModes.Normal;
         t.raycastTarget = false;
-        if (titulo) { t.fontStyle = FontStyles.Bold; if (fuenteTitulos != null) t.font = fuenteTitulos; }
+        if (fuenteTitulos != null) t.font = fuenteTitulos;
+        if (titulo) t.fontStyle = FontStyles.Bold;
         return t;
     }
 

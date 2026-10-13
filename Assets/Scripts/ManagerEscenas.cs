@@ -12,7 +12,7 @@ public class ManagerEscenas : MonoBehaviour
     // Update is called once per frame
     public void Juego()
     {
-        SceneManager.LoadScene("Juego", LoadSceneMode.Single);
+        SceneManager.LoadScene("Juego Pueblo", LoadSceneMode.Single);
     }
 
     public void Salir()
