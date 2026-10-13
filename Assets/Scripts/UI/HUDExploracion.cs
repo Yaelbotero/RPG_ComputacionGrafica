@@ -86,7 +86,7 @@ namespace RPG.UI
 
         private void ActualizarOro(int oroActual)
         {
-            if (textoOro != null) textoOro.text = $"ORO: {oroActual}g";
+            if (textoOro != null) textoOro.text = $"Dinero: {oroActual}";
         }
 
         // POR QUÉ: Permite a los triggers del entorno (ej. carteles, NPCs) 

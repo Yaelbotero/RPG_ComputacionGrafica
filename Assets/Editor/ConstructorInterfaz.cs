@@ -139,7 +139,7 @@ public static class ConstructorInterfaz
 
         Image fondoOro = Perg("FondoOro", t);
         Ancla(fondoOro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(320, 80));
-        TextMeshProUGUI oro = Texto("TextoOro", t, "ORO: 0g", 38, TintaOro, TextAlignmentOptions.Center);
+        TextMeshProUGUI oro = Texto("TextoOro", t, "Dinero: 0", 38, TintaOro, TextAlignmentOptions.Center);
         Ancla(oro.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -30), new Vector2(320, 80));
 
         TextMeshProUGUI lugar = Texto("TextoZona", t, zona.ToUpperInvariant(), 26, Crema, TextAlignmentOptions.Center);
