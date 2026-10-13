@@ -480,9 +480,9 @@ public static class ConstructorInterfaz
         Image dim = panel.gameObject.AddComponent<Image>();
         dim.color = new Color32(0, 0, 0, 170);
 
-        Image caja = Caja("Caja", panel, Panel, true);
-        Ancla(caja.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(620, 700));
-        TextMeshProUGUI titulo = Texto("Titulo", caja.transform, "PAUSA", 80, Dorado, TextAlignmentOptions.Center, true);
+        Image caja = Perg("Caja", panel);
+        Ancla(caja.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(680, 760));
+        TextMeshProUGUI titulo = Texto("Titulo", caja.transform, "PAUSA", 80, TintaNombre, TextAlignmentOptions.Center, true);
         Ancla(titulo.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -30), new Vector2(560, 110));
 
         string[] etiquetas = { "CONTINUAR", "AJUSTES", "MENU PRINCIPAL", "SALIR" };
@@ -490,7 +490,10 @@ public static class ConstructorInterfaz
         for (int i = 0; i < 4; i++)
         {
             btns[i] = Boton("Boton" + etiquetas[i].Replace(" ", ""), caja.transform, etiquetas[i], new Vector2(480, 96), 44, true);
-            Ancla((RectTransform)btns[i].transform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -170 - i * 120), new Vector2(480, 96));
+            Ancla((RectTransform)btns[i].transform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -190 - i * 120), new Vector2(480, 96));
+            TextMeshProUGUI et = btns[i].transform.Find("Etiqueta").GetComponent<TextMeshProUGUI>();
+            et.alignment = TextAlignmentOptions.Center;
+            Estirar(et.rectTransform, 16, 0, 16, 0);
         }
         pausa.botonContinuar = btns[0];
         pausa.botonAjustes = btns[1];
@@ -498,12 +501,12 @@ public static class ConstructorInterfaz
         pausa.botonSalir = btns[3];
 
         // Ajustes de volumen
-        Image ajustes = Caja("PanelAjustes", panel, new Color32(26, 20, 16, 250), true);
-        Ancla(ajustes.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(760, 560));
-        TextMeshProUGUI ta = Texto("Titulo", ajustes.transform, "AJUSTES", 72, Dorado, TextAlignmentOptions.Center, true);
-        Ancla(ta.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -24), new Vector2(600, 100));
-        pausa.sliderMusica = CrearSlider("Musica", ajustes.transform, "Música", -150);
-        pausa.sliderEfectos = CrearSlider("Efectos", ajustes.transform, "Efectos", -260);
+        Image ajustes = Perg("PanelAjustes", panel);
+        Ancla(ajustes.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(820, 800));
+        TextMeshProUGUI ta = Texto("Titulo", ajustes.transform, "AJUSTES", 72, TintaNombre, TextAlignmentOptions.Center, true);
+        Ancla(ta.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -50), new Vector2(600, 100));
+        pausa.sliderMusica = CrearSlider("Musica", ajustes.transform, "Música", -230);
+        pausa.sliderEfectos = CrearSlider("Efectos", ajustes.transform, "Efectos", -340);
         Button volver = Boton("BotonVolver", ajustes.transform, "VOLVER", new Vector2(360, 90), 44, true);
         Ancla((RectTransform)volver.transform, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 40), new Vector2(360, 90));
         pausa.botonVolverAjustes = volver;
@@ -526,13 +529,13 @@ public static class ConstructorInterfaz
         go.name = "Slider" + nombre;
         go.transform.SetParent(padre, false);
         RectTransform r = (RectTransform)go.transform;
-        Ancla(r, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(120, y), new Vector2(400, 32));
+        Ancla(r, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(170, y), new Vector2(400, 32));
         Slider s = go.GetComponent<Slider>();
         s.minValue = -60f;
         s.maxValue = 0f;
         s.value = 0f;
-        TextMeshProUGUI lbl = Texto("Etiqueta" + nombre, padre, etiqueta, 40, Crema, TextAlignmentOptions.Left);
-        Ancla(lbl.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(-250, y), new Vector2(240, 48));
+        TextMeshProUGUI lbl = Texto("Etiqueta" + nombre, padre, etiqueta, 40, Tinta, TextAlignmentOptions.Left);
+        Ancla(lbl.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(-200, y), new Vector2(240, 48));
         return s;
     }
 
