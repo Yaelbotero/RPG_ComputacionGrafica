@@ -22,7 +22,7 @@ namespace RPG.UI
         public GameObject panelPifia;
         public TextMeshProUGUI textoPifia;
         public UnityEngine.UI.Image fondoPifia;
-        public Color colorPifia = new Color32(0x52, 0x22, 0x5E, 255); // #52225E
+        public Color colorPifia = new Color32(240, 170, 150, 255); // tinte rojizo sobre el pergamino
         public float duracionPifia = 1.5f;
 
         [Header("Tipografía")]
@@ -43,7 +43,7 @@ namespace RPG.UI
 
             // Aplicar color de pifia al banner
             if (fondoPifia != null) fondoPifia.color = colorPifia;
-            if (textoPifia != null) textoPifia.color = Color.white;
+            if (textoPifia != null) textoPifia.color = new Color32(110, 20, 15, 255);
         }
 
         private void OnEnable()

@@ -343,40 +343,40 @@ public static class ConstructorInterfaz
 
         // Paneles de vida
         PanelCombatiente a = PanelEnemigo("PanelEnemigoA", t, new Vector2(60, -60), boss ? "Lupus" : "Enemigo del bosque 1", boss ? 82 : 13);
-        PanelCombatiente b = PanelEnemigo("PanelEnemigoB", t, new Vector2(60, -230), "Helena", 35);
+        PanelCombatiente b = PanelEnemigo("PanelEnemigoB", t, new Vector2(60, -250), "Helena", 35);
         b.raiz.SetActive(boss);
         menu.enemigos = new[] { a, b };
 
-        Image heroePanel = Caja("PanelHeroe", t, Panel, true);
-        Ancla(heroePanel.rectTransform, new Vector2(1, 0), new Vector2(1, 0), new Vector2(-60, 330), new Vector2(660, 150));
-        TextMeshProUGUI nh = Texto("Nombre", heroePanel.transform, "HÉROE", 40, Crema, TextAlignmentOptions.Left, false);
-        Ancla(nh.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(24, -12), new Vector2(400, 50));
+        Image heroePanel = Perg("PanelHeroe", t);
+        Ancla(heroePanel.rectTransform, new Vector2(1, 0), new Vector2(1, 0), new Vector2(-60, 370), new Vector2(700, 170));
+        TextMeshProUGUI nh = Texto("Nombre", heroePanel.transform, "HÉROE", 40, Tinta, TextAlignmentOptions.Left, true);
+        Ancla(nh.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(46, -26), new Vector2(400, 50));
         Image fh = Caja("FondoBarra", heroePanel.transform, new Color32(10, 8, 6, 255), true);
-        Ancla(fh.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(24, 52), new Vector2(612, 26));
+        Ancla(fh.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(44, 40), new Vector2(612, 26));
         Image bh = Barra("Barra", heroePanel.transform, Verde);
-        Ancla(bh.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(24, 52), new Vector2(612, 26));
-        TextMeshProUGUI hh = Texto("HP", heroePanel.transform, "HP 87/87", 30, Crema, TextAlignmentOptions.Right);
-        Ancla(hh.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-24, -14), new Vector2(300, 44));
+        Ancla(bh.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(44, 40), new Vector2(612, 26));
+        TextMeshProUGUI hh = Texto("HP", heroePanel.transform, "HP 87/87", 30, Tinta, TextAlignmentOptions.Right);
+        Ancla(hh.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-46, -30), new Vector2(300, 44));
         menu.txtNombreHeroe = nh;
         menu.txtHpHeroe = hh;
         menu.barraHeroe = bh;
 
         // Caja inferior
-        Image inferior = Caja("CajaInferior", t, Panel, true);
-        Ancla(inferior.rectTransform, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 30), new Vector2(1800, 270));
+        Image inferior = Perg("CajaInferior", t);
+        Ancla(inferior.rectTransform, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 30), new Vector2(1800, 310));
         Transform ci = inferior.transform;
 
         // Mensaje (izquierda)
         GameObject cajaMsg = Vacio("CajaMensaje", ci);
         RectTransform rm = cajaMsg.AddComponent<RectTransform>();
-        Ancla(rm, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(1060, 270));
-        TextMeshProUGUI msg = Texto("Mensaje", rm, "¿Qué hará Héroe?", 44, Crema, TextAlignmentOptions.TopLeft);
-        Estirar(msg.rectTransform, 50, 40, 30, 40);
+        Ancla(rm, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(1060, 310));
+        TextMeshProUGUI msg = Texto("Mensaje", rm, "¿Qué hará Héroe?", 44, Tinta, TextAlignmentOptions.TopLeft);
+        Estirar(msg.rectTransform, 80, 50, 30, 50);
 
         // Menu principal (derecha): ATACAR / ITEMS
         RectTransform principal = UI("MenuPrincipal", ci);
-        Ancla(principal, new Vector2(1, 0), new Vector2(1, 0), new Vector2(0, 0), new Vector2(740, 270));
-        Image sep = Caja("Separador", principal, Dorado, false);
+        Ancla(principal, new Vector2(1, 0), new Vector2(1, 0), new Vector2(0, 0), new Vector2(740, 310));
+        Image sep = Caja("Separador", principal, new Color32(110, 70, 30, 255), false);
         Ancla(sep.rectTransform, new Vector2(0, 0.5f), new Vector2(0, 0.5f), new Vector2(0, 0), new Vector2(4, 230));
         Button atacar = Boton("BotonAtacar", principal, "ATACAR", new Vector2(310, 100), 42, true);
         Ancla((RectTransform)atacar.transform, new Vector2(0, 0.5f), new Vector2(0, 0.5f), new Vector2(40, 0), new Vector2(310, 100));
@@ -392,15 +392,15 @@ public static class ConstructorInterfaz
         for (int i = 0; i < 3; i++)
         {
             btnAtq[i] = Boton("BotonAtaque" + (i + 1), menuAtq, nombres[i], new Vector2(430, 100), 40, false);
-            Ancla((RectTransform)btnAtq[i].transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(40 + (i % 2) * 560, -30 - (i / 2) * 115), new Vector2(540, 95));
+            Ancla((RectTransform)btnAtq[i].transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(70 + (i % 2) * 560, -55 - (i / 2) * 115), new Vector2(540, 95));
             TextMeshProUGUI d = Texto("Dados", btnAtq[i].transform, dados[i], 28, Dorado, TextAlignmentOptions.Right);
             Ancla(d.rectTransform, new Vector2(1, 0), new Vector2(1, 0), new Vector2(-18, 8), new Vector2(240, 36));
             menu.ataques.Add(new DatosAtaque { nombre = nombres[i], dados = dados[i] });
         }
         Button volverAtq = Boton("BotonVolver", menuAtq, "VOLVER", new Vector2(300, 80), 40, true);
-        Ancla((RectTransform)volverAtq.transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(600, -145), new Vector2(300, 80));
-        TextMeshProUGUI info = Texto("InfoAtaque", menuAtq, "Elige un ataque\n[Esc] volver", 32, Crema, TextAlignmentOptions.TopLeft);
-        Ancla(info.rectTransform, new Vector2(1, 0.5f), new Vector2(1, 0.5f), new Vector2(-40, 0), new Vector2(520, 200));
+        Ancla((RectTransform)volverAtq.transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(630, -170), new Vector2(300, 80));
+        TextMeshProUGUI info = Texto("InfoAtaque", menuAtq, "Elige un ataque\n[Esc] volver", 32, Tinta, TextAlignmentOptions.TopLeft);
+        Ancla(info.rectTransform, new Vector2(1, 0.5f), new Vector2(1, 0.5f), new Vector2(-70, 0), new Vector2(480, 200));
         info.rectTransform.pivot = new Vector2(1, 0.5f);
         menuAtq.gameObject.SetActive(false);
 
@@ -412,12 +412,12 @@ public static class ConstructorInterfaz
         {
             btnIt[i] = Boton("BotonItem" + (i + 1), menuIt, "Item", new Vector2(540, 80), 34, false);
             int col = i % 3, fila = i / 3;
-            Ancla((RectTransform)btnIt[i].transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(40 + col * 560, -30 - fila * 100), new Vector2(540, 80));
+            Ancla((RectTransform)btnIt[i].transform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(70 + col * 540, -55 - fila * 100), new Vector2(540, 80));
         }
         Button volverIt = Boton("BotonVolver", menuIt, "VOLVER", new Vector2(300, 70), 36, true);
-        Ancla((RectTransform)volverIt.transform, new Vector2(1, 0), new Vector2(1, 0), new Vector2(-40, 20), new Vector2(300, 70));
-        TextMeshProUGUI ayudaIt = Texto("Ayuda", menuIt, "Elige un item para usarlo · [Esc] volver", 28, new Color32(170, 160, 140, 255), TextAlignmentOptions.Left);
-        Ancla(ayudaIt.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(40, 24), new Vector2(900, 40));
+        Ancla((RectTransform)volverIt.transform, new Vector2(1, 0), new Vector2(1, 0), new Vector2(-70, 45), new Vector2(300, 70));
+        TextMeshProUGUI ayudaIt = Texto("Ayuda", menuIt, "Elige un item para usarlo · [Esc] volver", 28, new Color32(115, 90, 58, 255), TextAlignmentOptions.Left);
+        Ancla(ayudaIt.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(80, 50), new Vector2(900, 40));
         menuIt.gameObject.SetActive(false);
 
         menu.txtMensaje = msg;
@@ -449,17 +449,17 @@ public static class ConstructorInterfaz
 
     private static PanelCombatiente PanelEnemigo(string nombre, Transform padre, Vector2 pos, string titulo, int hp)
     {
-        Image panel = Caja(nombre, padre, Panel, true);
-        Ancla(panel.rectTransform, new Vector2(0, 1), new Vector2(0, 1), pos, new Vector2(660, 150));
-        TextMeshProUGUI n = Texto("Nombre", panel.transform, titulo.ToUpperInvariant(), 34, Crema, TextAlignmentOptions.Left);
+        Image panel = Perg(nombre, padre);
+        Ancla(panel.rectTransform, new Vector2(0, 1), new Vector2(0, 1), pos, new Vector2(700, 170));
+        TextMeshProUGUI n = Texto("Nombre", panel.transform, titulo.ToUpperInvariant(), 34, Tinta, TextAlignmentOptions.Left, true);
         n.textWrappingMode = TextWrappingModes.NoWrap;
-        Ancla(n.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(24, -14), new Vector2(430, 50));
+        Ancla(n.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(46, -28), new Vector2(430, 50));
         Image fb = Caja("FondoBarra", panel.transform, new Color32(10, 8, 6, 255), true);
-        Ancla(fb.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(24, 52), new Vector2(612, 26));
+        Ancla(fb.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(44, 40), new Vector2(612, 26));
         Image barra = Barra("Barra", panel.transform, Verde);
-        Ancla(barra.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(24, 52), new Vector2(612, 26));
-        TextMeshProUGUI h = Texto("HP", panel.transform, "HP " + hp + "/" + hp, 30, Crema, TextAlignmentOptions.Right);
-        Ancla(h.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-24, -14), new Vector2(300, 44));
+        Ancla(barra.rectTransform, new Vector2(0, 0), new Vector2(0, 0), new Vector2(44, 40), new Vector2(612, 26));
+        TextMeshProUGUI h = Texto("HP", panel.transform, "HP " + hp + "/" + hp, 30, Tinta, TextAlignmentOptions.Right);
+        Ancla(h.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-46, -30), new Vector2(300, 44));
         return new PanelCombatiente { nombre = titulo, raiz = panel.gameObject, txtNombre = n, txtHp = h, barra = barra, hp = hp, hpMax = hp };
     }
 
@@ -550,15 +550,15 @@ public static class ConstructorInterfaz
         Image dim = panel.gameObject.AddComponent<Image>();
         dim.color = new Color32(0, 0, 0, 150);
 
-        Image ventana = Caja("Ventana", panel, Panel, true);
+        Image ventana = Perg("Ventana", panel);
         Ancla(ventana.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(1100, 720));
-        TextMeshProUGUI titulo = Texto("Titulo", ventana.transform, "INVENTARIO", 76, Dorado, TextAlignmentOptions.Center, true);
+        TextMeshProUGUI titulo = Texto("Titulo", ventana.transform, "INVENTARIO", 76, TintaNombre, TextAlignmentOptions.Center, true);
         Ancla(titulo.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -24), new Vector2(900, 100));
-        TextMeshProUGUI pista = Texto("Pista", ventana.transform, "[I] o [Tab] para cerrar", 26, new Color32(170, 160, 140, 255), TextAlignmentOptions.Center);
+        TextMeshProUGUI pista = Texto("Pista", ventana.transform, "[I] o [Tab] para cerrar", 26, new Color32(115, 90, 58, 255), TextAlignmentOptions.Center);
         Ancla(pista.rectTransform, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 22), new Vector2(700, 36));
 
         RectTransform contenedor = UI("ContenedorItems", ventana.transform);
-        Ancla(contenedor, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -150), new Vector2(1000, 480));
+        Ancla(contenedor, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -160), new Vector2(980, 460));
         GridLayoutGroup grid = contenedor.gameObject.AddComponent<GridLayoutGroup>();
         grid.cellSize = new Vector2(310, 96);
         grid.spacing = new Vector2(16, 16);
@@ -577,13 +577,13 @@ public static class ConstructorInterfaz
         Notificaciones n = canvas.gameObject.AddComponent<Notificaciones>();
         Transform t = canvas.transform;
 
-        Image toast = Caja("ToastRecoleccion", t, Panel, true);
-        Ancla(toast.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -130), new Vector2(420, 76));
-        TextMeshProUGUI tt = Texto("Texto", toast.transform, "+1 Poción", 34, Crema, TextAlignmentOptions.Center);
+        Image toast = Perg("ToastRecoleccion", t);
+        Ancla(toast.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-30, -130), new Vector2(460, 112));
+        TextMeshProUGUI tt = Texto("Texto", toast.transform, "+1 Poción", 34, Tinta, TextAlignmentOptions.Center);
         Estirar(tt.rectTransform);
 
-        Image pifia = Caja("BannerPifia", t, Morado, true);
-        Ancla(pifia.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -190), new Vector2(980, 120));
+        Image pifia = Perg("BannerPifia", t);
+        Ancla(pifia.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -190), new Vector2(1000, 150));
         TextMeshProUGUI pt = Texto("Texto", pifia.transform, "!! PIFIA DE HELENA !!", 56, Color.white, TextAlignmentOptions.Center, true);
         Estirar(pt.rectTransform);
 
