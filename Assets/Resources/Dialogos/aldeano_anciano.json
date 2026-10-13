@@ -1,0 +1,15 @@
+{
+  "id": "aldeano_anciano",
+  "lineas": [
+    {
+      "hablante": "Anciano Raimundo",
+      "texto": "La ventisca de Monegros no perdona a nadie, forastero.",
+      "retrato": "anciano"
+    },
+    {
+      "hablante": "Anciano Raimundo",
+      "texto": "Si pretendes cruzar el bosque hacia Sástago, ten cuidado con las sombras. De noche se escuchan aullidos que hielan la sangre.",
+      "retrato": "anciano"
+    }
+  ]
+}

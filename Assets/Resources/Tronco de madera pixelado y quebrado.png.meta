@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 17d05149c8cb1a84a9009a4d1cf936b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2368926521478740667
+    second: Tronco de madera pixelado y quebrado_0
+  - first:
+      213: 311340111527284340
+    second: Tronco de madera pixelado y quebrado_1
+  - first:
+      213: -4089301735027958768
+    second: Tronco de madera pixelado y quebrado_2
+  - first:
+      213: -6904756521645054001
+    second: Tronco de madera pixelado y quebrado_3
+  - first:
+      213: -5101211204113996372
+    second: Tronco de madera pixelado y quebrado_4
+  - first:
+      213: 8110446451461548560
+    second: Tronco de madera pixelado y quebrado_5
+  - first:
+      213: 4963539987512259
+    second: Tronco de madera pixelado y quebrado_6
+  - first:
+      213: 2605338473819053200
+    second: Tronco de madera pixelado y quebrado_7
+  - first:
+      213: -1974167207178847790
+    second: Tronco de madera pixelado y quebrado_8
+  - first:
+      213: -7880682165446948291
+    second: Tronco de madera pixelado y quebrado_9
+  - first:
+      213: 9033622250568398695
+    second: Tronco de madera pixelado y quebrado_10
+  - first:
+      213: -2253114511919101650
+    second: Tronco de madera pixelado y quebrado_11
+  - first:
+      213: 5335820458033891311
+    second: Tronco de madera pixelado y quebrado_12
+  - first:
+      213: 4883866933934134205
+    second: Tronco de madera pixelado y quebrado_13
+  - first:
+      213: 8527590787986193286
+    second: Tronco de madera pixelado y quebrado_14
+  - first:
+      213: -7389439195072498558
+    second: Tronco de madera pixelado y quebrado_15
+  - first:
+      213: 6728904229343382527
+    second: Tronco de madera pixelado y quebrado_16
+  - first:
+      213: 4928850282650865998
+    second: Tronco de madera pixelado y quebrado_17
+  - first:
+      213: -2909548441285958876
+    second: Tronco de madera pixelado y quebrado_18
+  - first:
+      213: 2725749005742879948
+    second: Tronco de madera pixelado y quebrado_19
+  - first:
+      213: -6494333435406497464
+    second: Tronco de madera pixelado y quebrado_20
+  - first:
+      213: -6913522844416063948
+    second: Tronco de madera pixelado y quebrado_21
+  - first:
+      213: -7393093331780237412
+    second: Tronco de madera pixelado y quebrado_22
+  - first:
+      213: -3016259317113147709
+    second: Tronco de madera pixelado y quebrado_23
+  - first:
+      213: 6641809668869217241
+    second: Tronco de madera pixelado y quebrado_24
+  - first:
+      213: 5578080224120238966
+    second: Tronco de madera pixelado y quebrado_25
+  - first:
+      213: -4683777415119108712
+    second: Tronco de madera pixelado y quebrado_26
+  - first:
+      213: 3196129655579433501
+    second: Tronco de madera pixelado y quebrado_27
+  - first:
+      213: -3989401179713000390
+    second: Tronco de madera pixelado y quebrado_28
+  - first:
+      213: -5651819627092110604
+    second: Tronco de madera pixelado y quebrado_29
+  - first:
+      213: -3905194931969644873
+    second: Tronco de madera pixelado y quebrado_30
+  - first:
+      213: -2045110420814074751
+    second: Tronco de madera pixelado y quebrado_31
+  - first:
+      213: 9207918178710743174
+    second: Tronco de madera pixelado y quebrado_32
+  - first:
+      213: 6800967627145697415
+    second: Tronco de madera pixelado y quebrado_33
+  - first:
+      213: 5882873693440435819
+    second: Tronco de madera pixelado y quebrado_34
+  - first:
+      213: 7999995382680023058
+    second: Tronco de madera pixelado y quebrado_35
+  - first:
+      213: -852286232706008801
+    second: Tronco de madera pixelado y quebrado_36
+  - first:
+      213: -2593486746412514902
+    second: Tronco de madera pixelado y quebrado_37
+  - first:
+      213: 3951364955985066861
+    second: Tronco de madera pixelado y quebrado_38
+  - first:
+      213: -8453311932780808508
+    second: Tronco de madera pixelado y quebrado_39
+  - first:
+      213: 8121799192779711457
+    second: Tronco de madera pixelado y quebrado_40
+  - first:
+      213: -646318638282326249
+    second: Tronco de madera pixelado y quebrado_41
+  - first:
+      213: -981214187359106290
+    second: Tronco de madera pixelado y quebrado_42
+  - first:
+      213: -8462712967754404174
+    second: Tronco de madera pixelado y quebrado_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 1079
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbafdb3ce1e10e020800000000000000
+      internalID: 2368926521478740667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 657
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e0aef8e2a125400800000000000000
+      internalID: 311340111527284340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 661
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c1540fcb1ef37c0800000000000000
+      internalID: -4089301735027958768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_3
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 31
+        width: 1024
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7e8cac6806d20a0800000000000000
+      internalID: -6904756521645054001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_4
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 623
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5ea8eef6bd439b0800000000000000
+      internalID: -5101211204113996372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_5
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 606
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a613d93181e8070800000000000000
+      internalID: 8110446451461548560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 574
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbb8c53052a11000800000000000000
+      internalID: 4963539987512259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_7
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 577
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c94abc985082420800000000000000
+      internalID: 2605338473819053200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_8
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 527
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d931e872695a94e0800000000000000
+      internalID: -1974167207178847790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 111
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a47ccf25132a290800000000000000
+      internalID: -7880682165446948291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_10
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 129
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767b130239fdd5d70800000000000000
+      internalID: 9033622250568398695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_11
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 127
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29c8c6f9445bb0e0800000000000000
+      internalID: -2253114511919101650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_12
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 129
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe74f5aaf64ac0a40800000000000000
+      internalID: 5335820458033891311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_13
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 127
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db39b6fb91bf6c340800000000000000
+      internalID: 4883866933934134205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_14
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 127
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b7fcbf3a6185670800000000000000
+      internalID: 8527590787986193286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_15
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 113
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284fa58f330737990800000000000000
+      internalID: -7389439195072498558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_16
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbc2adcebed16d50800000000000000
+      internalID: 6728904229343382527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 69
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e411d78c73bc66440800000000000000
+      internalID: 4928850282650865998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_18
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 79
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423eb5cab153f97d0800000000000000
+      internalID: -2909548441285958876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_19
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 81
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4bd22774ec3d520800000000000000
+      internalID: 2725749005742879948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 81
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84947a1262e7fd5a0800000000000000
+      internalID: -6494333435406497464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_21
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 81
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43648083a9b3e00a0800000000000000
+      internalID: -6913522844416063948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_22
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 83
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c970ee7f8c4766990800000000000000
+      internalID: -7393093331780237412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_23
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 68
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce2205c1281426d0800000000000000
+      internalID: -3016259317113147709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 55
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db54ba34b27c2c50800000000000000
+      internalID: 6641809668869217241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_25
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 57
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673715fe862596d40800000000000000
+      internalID: 5578080224120238966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_26
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 65
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89504d4b141effeb0800000000000000
+      internalID: -4683777415119108712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_27
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 47
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a57e8ecfeea5c20800000000000000
+      internalID: 3196129655579433501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_28
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 61
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3caea883ccc2a8c0800000000000000
+      internalID: -3989401179713000390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_29
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 66
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f218986ef3b091b0800000000000000
+      internalID: -5651819627092110604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_30
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 45
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b62b4566e5fdc9c0800000000000000
+      internalID: -3905194931969644873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_31
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 55
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c6de068ee4e93e0800000000000000
+      internalID: -2045110420814074751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_32
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 57
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6886ae24cc819cf70800000000000000
+      internalID: 9207918178710743174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_33
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 55
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78853f81604e16e50800000000000000
+      internalID: 6800967627145697415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_34
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 51
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66e104947a24a150800000000000000
+      internalID: 5882873693440435819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_35
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 55
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210786d2a61b50f60800000000000000
+      internalID: 7999995382680023058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_36
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f193a9cdf221c24f0800000000000000
+      internalID: -852286232706008801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_37
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 45
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa106668b85120cd0800000000000000
+      internalID: -2593486746412514902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_38
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 37
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bba630e7116d630800000000000000
+      internalID: 3951364955985066861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_39
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 49
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6770fa59dcfaa80800000000000000
+      internalID: -8453311932780808508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_40
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 53
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e360bea55d66b070800000000000000
+      internalID: 8121799192779711457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_41
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 52
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fb7717f90d707f0800000000000000
+      internalID: -646318638282326249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_42
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 55
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b03e135e60262f0800000000000000
+      internalID: -981214187359106290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tronco de madera pixelado y quebrado_43
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 15
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be28e8a4676e8a80800000000000000
+      internalID: -8462712967754404174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tronco de madera pixelado y quebrado_0: 2368926521478740667
+      Tronco de madera pixelado y quebrado_1: 311340111527284340
+      Tronco de madera pixelado y quebrado_10: 9033622250568398695
+      Tronco de madera pixelado y quebrado_11: -2253114511919101650
+      Tronco de madera pixelado y quebrado_12: 5335820458033891311
+      Tronco de madera pixelado y quebrado_13: 4883866933934134205
+      Tronco de madera pixelado y quebrado_14: 8527590787986193286
+      Tronco de madera pixelado y quebrado_15: -7389439195072498558
+      Tronco de madera pixelado y quebrado_16: 6728904229343382527
+      Tronco de madera pixelado y quebrado_17: 4928850282650865998
+      Tronco de madera pixelado y quebrado_18: -2909548441285958876
+      Tronco de madera pixelado y quebrado_19: 2725749005742879948
+      Tronco de madera pixelado y quebrado_2: -4089301735027958768
+      Tronco de madera pixelado y quebrado_20: -6494333435406497464
+      Tronco de madera pixelado y quebrado_21: -6913522844416063948
+      Tronco de madera pixelado y quebrado_22: -7393093331780237412
+      Tronco de madera pixelado y quebrado_23: -3016259317113147709
+      Tronco de madera pixelado y quebrado_24: 6641809668869217241
+      Tronco de madera pixelado y quebrado_25: 5578080224120238966
+      Tronco de madera pixelado y quebrado_26: -4683777415119108712
+      Tronco de madera pixelado y quebrado_27: 3196129655579433501
+      Tronco de madera pixelado y quebrado_28: -3989401179713000390
+      Tronco de madera pixelado y quebrado_29: -5651819627092110604
+      Tronco de madera pixelado y quebrado_3: -6904756521645054001
+      Tronco de madera pixelado y quebrado_30: -3905194931969644873
+      Tronco de madera pixelado y quebrado_31: -2045110420814074751
+      Tronco de madera pixelado y quebrado_32: 9207918178710743174
+      Tronco de madera pixelado y quebrado_33: 6800967627145697415
+      Tronco de madera pixelado y quebrado_34: 5882873693440435819
+      Tronco de madera pixelado y quebrado_35: 7999995382680023058
+      Tronco de madera pixelado y quebrado_36: -852286232706008801
+      Tronco de madera pixelado y quebrado_37: -2593486746412514902
+      Tronco de madera pixelado y quebrado_38: 3951364955985066861
+      Tronco de madera pixelado y quebrado_39: -8453311932780808508
+      Tronco de madera pixelado y quebrado_4: -5101211204113996372
+      Tronco de madera pixelado y quebrado_40: 8121799192779711457
+      Tronco de madera pixelado y quebrado_41: -646318638282326249
+      Tronco de madera pixelado y quebrado_42: -981214187359106290
+      Tronco de madera pixelado y quebrado_43: -8462712967754404174
+      Tronco de madera pixelado y quebrado_5: 8110446451461548560
+      Tronco de madera pixelado y quebrado_6: 4963539987512259
+      Tronco de madera pixelado y quebrado_7: 2605338473819053200
+      Tronco de madera pixelado y quebrado_8: -1974167207178847790
+      Tronco de madera pixelado y quebrado_9: -7880682165446948291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

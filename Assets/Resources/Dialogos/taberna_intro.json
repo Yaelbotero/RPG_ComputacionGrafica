@@ -1,0 +1,60 @@
+{
+  "id": "taberna_intro",
+  "lineas": [
+    {
+      "hablante": "Jorge",
+      "texto": "¡Mujer de malas mañas, largo inmediatamente de aquí, no molestes a nuestros invitados!",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "Disculpa el alboroto, forastero. Esa chica es muy extraña, tiene ojos de ángel y pelo de diablo.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "No puede ser más que una bruja, y dicen aquí en el pueblo que ya ha ocasionado varios problemas.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Solo buscaba cobijo de la tormenta que azota el camino entre Lérida y Zaragoza. La ventisca casi congela a mi caballo.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "Haces bien en resguardarte en Monegros. Toma, bebe un poco de vino caliente para calentar los huesos.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "Espera un momento... Disculpe mi querido forastero, ¿me podrías leer lo que está escrito en tu empuñadura? ... creo reconocer un fragmento de ello.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "\"Por su maldad, un alma fue castigada. Gracias a un noble caballero, atrapada por siempre en la nada. No busques el maldito espejo, pues si atrapa tu reflejo, tu vida en una eterna agonía se convertirá.\"",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "¡Por todos los santos! Efectivamente, recuerdo haber escuchado una historia hace ya algunos años.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "Existió tiempo atrás un mago y brujo adorador de Moloch, este despreciable ser vivió en esta comarca, atormentándola por muchos años y dejándola maldita...",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "...hasta que por fin un grupo de valientes héroes lograron encerrar a esta bestia en una cárcel mágica, desterrándolo al olvido.",
+      "retrato": "jorge"
+    },
+    {
+      "hablante": "Jorge",
+      "texto": "En fin... historias que uno escucha de niño, solo son historias. Tienes un cuarto asignado arriba para pasar la noche. Descansa, buen hombre.",
+      "retrato": "jorge"
+    }
+  ]
+}

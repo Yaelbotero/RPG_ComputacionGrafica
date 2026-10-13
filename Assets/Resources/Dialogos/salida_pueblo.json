@@ -1,0 +1,25 @@
+{
+  "id": "salida_pueblo",
+  "lineas": [
+    {
+      "hablante": "Héroe",
+      "texto": "Las puertas del pueblo quedan atrás. El viento de Monegros azota con fuerza el inicio del bosque.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Debemos darnos prisa. Son dos días de marcha hasta Sástago cruzando esta espesura.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Mantén tus ojos abiertos, Helena. Los aldeanos no mentían: el bosque está plagado de bestias y trampas.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Confío en tu espada. Sigamos la senda sin desviarnos.",
+      "retrato": "helena"
+    }
+  ]
+}

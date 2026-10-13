@@ -1,0 +1,25 @@
+{
+  "id": "fin_derrota",
+  "lineas": [
+    {
+      "hablante": "Héroe",
+      "texto": "Maldición... mis fuerzas me abandonan... La espada cae de mis manos...",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Lupus",
+      "texto": "¡Ja, ja, ja! ¡Otro insensato cuyos huesos alimentarán el piso de esta caverna!",
+      "retrato": "lupus"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Te lo advertí en silencio: no debías buscar el reflejo del espejo. Tu alma ahora pertenece a Moloch.",
+      "retrato": "helena_demonio"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "La oscuridad se apodera de tu visión. Tu viaje ha terminado en la tumba olvidada de Zuhayr, y tu nombre se pierde en la nada...",
+      "retrato": ""
+    }
+  ]
+}

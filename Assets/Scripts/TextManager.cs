@@ -6,6 +6,9 @@ public class TextManager : MonoBehaviour
 {
     [SerializeField] private GameObject dialogoPanel;
     [SerializeField] private TMP_Text dialogoText;
+    [SerializeField] private DialogoNPC dialogo;
+    
+    // Respaldo: se usa solo si no hay un DialogoNPC asignado.
     [SerializeField, TextArea(4, 5)] private string[] lineasDialogo;
 
     private float tiempoEscritura = 0.05f;
@@ -16,6 +19,27 @@ public class TextManager : MonoBehaviour
 
     private void Start()
     {
+        if (dialogo != null && dialogo.lineas != null && dialogo.lineas.Length > 0)
+        {
+            lineasDialogo = dialogo.lineas;
+        }
+    }
+
+    public void IniciarDialogo(DialogoNPC nuevo)
+    {
+        if (nuevo == null || nuevo.lineas == null || nuevo.lineas.Length == 0)
+        {
+            return;
+        }
+
+        StopAllCoroutines();
+        lineasDialogo = nuevo.lineas;
+        lineIndex = 0;
+        dialogoTerminado = false;
+        enDialogo = true;
+        dialogoPanel.SetActive(true);
+        escrituraActual = StartCoroutine(ShowLine());
+
     }
 
     public int getLineIndex()

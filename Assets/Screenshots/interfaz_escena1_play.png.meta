@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: 0229cddc3c5d5834e8001a86dfb1e146
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3973861751812150796
+    second: interfaz_escena1_play_0
+  - first:
+      213: 5221822862468042493
+    second: interfaz_escena1_play_1
+  - first:
+      213: -4248995377224615644
+    second: interfaz_escena1_play_2
+  - first:
+      213: 962012627685550922
+    second: interfaz_escena1_play_3
+  - first:
+      213: -8839832504870528762
+    second: interfaz_escena1_play_4
+  - first:
+      213: -6030221496092557359
+    second: interfaz_escena1_play_5
+  - first:
+      213: -2581981093518256393
+    second: interfaz_escena1_play_6
+  - first:
+      213: -3019492426433878197
+    second: interfaz_escena1_play_7
+  - first:
+      213: -2026024409830414996
+    second: interfaz_escena1_play_8
+  - first:
+      213: 5327211627013414132
+    second: interfaz_escena1_play_9
+  - first:
+      213: 3091755417160009652
+    second: interfaz_escena1_play_10
+  - first:
+      213: -6172920158274941724
+    second: interfaz_escena1_play_11
+  - first:
+      213: 6072081485818212050
+    second: interfaz_escena1_play_12
+  - first:
+      213: 3996679794199762500
+    second: interfaz_escena1_play_13
+  - first:
+      213: 8601077143358747998
+    second: interfaz_escena1_play_14
+  - first:
+      213: -7759431425701762635
+    second: interfaz_escena1_play_15
+  - first:
+      213: 122994810703220021
+    second: interfaz_escena1_play_16
+  - first:
+      213: 838119968782911169
+    second: interfaz_escena1_play_17
+  - first:
+      213: 2238697566229301059
+    second: interfaz_escena1_play_18
+  - first:
+      213: -6433150412446412928
+    second: interfaz_escena1_play_19
+  - first:
+      213: -3980796762902577736
+    second: interfaz_escena1_play_20
+  - first:
+      213: -5848370815684127083
+    second: interfaz_escena1_play_21
+  - first:
+      213: -8269635114329227200
+    second: interfaz_escena1_play_22
+  - first:
+      213: -5963851017656125390
+    second: interfaz_escena1_play_23
+  - first:
+      213: -904208767423481027
+    second: interfaz_escena1_play_24
+  - first:
+      213: 8523176910336180783
+    second: interfaz_escena1_play_25
+  - first:
+      213: -131747502286328221
+    second: interfaz_escena1_play_26
+  - first:
+      213: 4387194095847467326
+    second: interfaz_escena1_play_27
+  - first:
+      213: 4946174793855298887
+    second: interfaz_escena1_play_28
+  - first:
+      213: 1164145039537505021
+    second: interfaz_escena1_play_29
+  - first:
+      213: 4845441993287984095
+    second: interfaz_escena1_play_30
+  - first:
+      213: 3711363816900718570
+    second: interfaz_escena1_play_31
+  - first:
+      213: -2968987806198187874
+    second: interfaz_escena1_play_32
+  - first:
+      213: 860321546382644412
+    second: interfaz_escena1_play_33
+  - first:
+      213: -68383748028916420
+    second: interfaz_escena1_play_34
+  - first:
+      213: -3488494101777972114
+    second: interfaz_escena1_play_35
+  - first:
+      213: -8090621476723428542
+    second: interfaz_escena1_play_36
+  - first:
+      213: -6785623077534997805
+    second: interfaz_escena1_play_37
+  - first:
+      213: 2484850906163262415
+    second: interfaz_escena1_play_38
+  - first:
+      213: 8361604657016988037
+    second: interfaz_escena1_play_39
+  - first:
+      213: 5118223175114281029
+    second: interfaz_escena1_play_40
+  - first:
+      213: 7916831254735981182
+    second: interfaz_escena1_play_41
+  - first:
+      213: 1219221800495459632
+    second: interfaz_escena1_play_42
+  - first:
+      213: 3167515071972272201
+    second: interfaz_escena1_play_43
+  - first:
+      213: 7154262923275124
+    second: interfaz_escena1_play_44
+  - first:
+      213: -4485946949775318922
+    second: interfaz_escena1_play_45
+  - first:
+      213: -2461168186698603081
+    second: interfaz_escena1_play_46
+  - first:
+      213: 7694616346314292713
+    second: interfaz_escena1_play_47
+  - first:
+      213: 7760195275367059945
+    second: interfaz_escena1_play_48
+  - first:
+      213: 2484377565950412830
+    second: interfaz_escena1_play_49
+  - first:
+      213: 2402157770613890287
+    second: interfaz_escena1_play_50
+  - first:
+      213: 555460658685292461
+    second: interfaz_escena1_play_51
+  - first:
+      213: 2138247637676270896
+    second: interfaz_escena1_play_52
+  - first:
+      213: 2159728168266730958
+    second: interfaz_escena1_play_53
+  - first:
+      213: 1989873895036739302
+    second: interfaz_escena1_play_54
+  - first:
+      213: 4437590141687698096
+    second: interfaz_escena1_play_55
+  - first:
+      213: -1965291168797925807
+    second: interfaz_escena1_play_56
+  - first:
+      213: -7898383305535814633
+    second: interfaz_escena1_play_57
+  - first:
+      213: -3222392892375423746
+    second: interfaz_escena1_play_58
+  - first:
+      213: -9069963275855371810
+    second: interfaz_escena1_play_59
+  - first:
+      213: -869301444650000318
+    second: interfaz_escena1_play_60
+  - first:
+      213: -1085308810500705517
+    second: interfaz_escena1_play_61
+  - first:
+      213: 6252697852203109683
+    second: interfaz_escena1_play_62
+  - first:
+      213: -6940114887619302832
+    second: interfaz_escena1_play_63
+  - first:
+      213: -2040242366849674131
+    second: interfaz_escena1_play_64
+  - first:
+      213: -153845965299245195
+    second: interfaz_escena1_play_65
+  - first:
+      213: 8117302479654841603
+    second: interfaz_escena1_play_66
+  - first:
+      213: 4078583963000444385
+    second: interfaz_escena1_play_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: interfaz_escena1_play_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 432
+        width: 279
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c065647753ef52730800000000000000
+      internalID: 3973861751812150796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfecb6d1a34a77840800000000000000
+      internalID: 5221822862468042493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_2
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 479
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429ff3077398805c0800000000000000
+      internalID: -4248995377224615644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b23ae4361c95d00800000000000000
+      internalID: 962012627685550922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 479
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6099d391c2b925580800000000000000
+      internalID: -8839832504870528762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 479
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df7a70bf79505ca0800000000000000
+      internalID: -6030221496092557359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_6
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6d11810e5fa2cd0800000000000000
+      internalID: -2581981093518256393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b472d68d2ab9816d0800000000000000
+      internalID: -3019492426433878197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_8
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 479
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65a9c9988d12e3e0800000000000000
+      internalID: -2026024409830414996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc177fffbe0ee940800000000000000
+      internalID: 5327211627013414132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_10
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 479
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7463ccb2f18ea20800000000000000
+      internalID: 3091755417160009652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_11
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 479
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec8c2352d1655aa0800000000000000
+      internalID: -6172920158274941724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_12
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 479
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deab69a0fd544450800000000000000
+      internalID: 6072081485818212050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_13
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 456
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4461246f81f077730800000000000000
+      internalID: 3996679794199762500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 4
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5531a7671a2d5770800000000000000
+      internalID: 8601077143358747998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_15
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 4
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b92b04ca36f05490800000000000000
+      internalID: -7759431425701762635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d8e21f027f4b100800000000000000
+      internalID: 122994810703220021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 4
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6877acba991ab00800000000000000
+      internalID: 838119968782911169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34701aa4393711f10800000000000000
+      internalID: 2238697566229301059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 4
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f497fb8cbd8b6a0800000000000000
+      internalID: -6433150412446412928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdba207f6e51c8c0800000000000000
+      internalID: -3980796762902577736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596d268aab966dea0800000000000000
+      internalID: -5848370815684127083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_22
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 4
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0404f4c8daa5c3d80800000000000000
+      internalID: -8269635114329227200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2383147e8152c3da0800000000000000
+      internalID: -5963851017656125390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_24
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bfdeeaaea9373f0800000000000000
+      internalID: -904208767423481027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_25
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2246620e38684670800000000000000
+      internalID: 8523176910336180783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_26
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ead2e3850fb2ef0800000000000000
+      internalID: -131747502286328221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_27
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39edab29c172ec30800000000000000
+      internalID: 4387194095847467326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d6cb0e4c754a440800000000000000
+      internalID: 4946174793855298887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_29
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df28aacdebfd72010800000000000000
+      internalID: 1164145039537505021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_30
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 3
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3e0b512d77e3340800000000000000
+      internalID: 4845441993287984095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_31
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefea925ab9618330800000000000000
+      internalID: 3711363816900718570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_32
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 2
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98371512590cc6d0800000000000000
+      internalID: -2968987806198187874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_33
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb490c463e970fb00800000000000000
+      internalID: 860321546382644412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_34
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 4
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d935ee75d0d0ff0800000000000000
+      internalID: -68383748028916420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_35
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e648a76e811669fc0800000000000000
+      internalID: -3488494101777972114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_36
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243f0c302a658bf80800000000000000
+      internalID: -8090621476723428542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_37
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d265d343cf94d1a0800000000000000
+      internalID: -6785623077534997805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_38
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc33baddbb6fb7220800000000000000
+      internalID: 2484850906163262415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_39
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 4
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581efb542236a0470800000000000000
+      internalID: 8361604657016988037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_40
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540dbd93cd4970740800000000000000
+      internalID: 5118223175114281029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_41
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 4
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a8f3db41c3edd60800000000000000
+      internalID: 7916831254735981182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_42
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03da1f094cb8be010800000000000000
+      internalID: 1219221800495459632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_43
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9486a9dfc2645fb20800000000000000
+      internalID: 3167515071972272201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_44
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47beb24a3ca691000800000000000000
+      internalID: 7154262923275124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_45
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67025694407beb1c0800000000000000
+      internalID: -4485946949775318922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_46
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 4
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b56653f29c28ddd0800000000000000
+      internalID: -2461168186698603081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_47
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 4
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed3af49cc4c8ca60800000000000000
+      internalID: 7694616346314292713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_48
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 4
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e11be7dc70c1bb60800000000000000
+      internalID: 7760195275367059945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_49
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e188c62cb384a7220800000000000000
+      internalID: 2484377565950412830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_50
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 4
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec92e3e3cd265120800000000000000
+      internalID: 2402157770613890287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_51
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 4
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf24afa68465b700800000000000000
+      internalID: 555460658685292461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_52
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 4
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0352385c5e49cad10800000000000000
+      internalID: 2138247637676270896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_53
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 4
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd81f88355e8fd10800000000000000
+      internalID: 2159728168266730958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_54
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 4
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eedc75c3c37d9b10800000000000000
+      internalID: 1989873895036739302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_55
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 4
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b21216f8bc759d30800000000000000
+      internalID: 4437590141687698096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_56
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 4
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e56933812e9b4e0800000000000000
+      internalID: -1965291168797925807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_57
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 4
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71489a52b3e436290800000000000000
+      internalID: -7898383305535814633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_58
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef42833ccb2c743d0800000000000000
+      internalID: -3222392892375423746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_59
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed16dc09474012280800000000000000
+      internalID: -9069963275855371810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_60
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 4
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24027ec11fe9fe3f0800000000000000
+      internalID: -869301444650000318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_61
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 4
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313f086136530f0f0800000000000000
+      internalID: -1085308810500705517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_62
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 4
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d0a60819b06c650800000000000000
+      internalID: 6252697852203109683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_63
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a2d0fa742cfaf90800000000000000
+      internalID: -6940114887619302832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_64
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d641934806a9fa3e0800000000000000
+      internalID: -2040242366849674131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_65
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f1630e8ed6dddf0800000000000000
+      internalID: -153845965299245195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_66
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d6932199376a070800000000000000
+      internalID: 8117302479654841603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interfaz_escena1_play_67
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 4
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e51f3d418a0a9830800000000000000
+      internalID: 4078583963000444385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      interfaz_escena1_play_0: 3973861751812150796
+      interfaz_escena1_play_1: 5221822862468042493
+      interfaz_escena1_play_10: 3091755417160009652
+      interfaz_escena1_play_11: -6172920158274941724
+      interfaz_escena1_play_12: 6072081485818212050
+      interfaz_escena1_play_13: 3996679794199762500
+      interfaz_escena1_play_14: 8601077143358747998
+      interfaz_escena1_play_15: -7759431425701762635
+      interfaz_escena1_play_16: 122994810703220021
+      interfaz_escena1_play_17: 838119968782911169
+      interfaz_escena1_play_18: 2238697566229301059
+      interfaz_escena1_play_19: -6433150412446412928
+      interfaz_escena1_play_2: -4248995377224615644
+      interfaz_escena1_play_20: -3980796762902577736
+      interfaz_escena1_play_21: -5848370815684127083
+      interfaz_escena1_play_22: -8269635114329227200
+      interfaz_escena1_play_23: -5963851017656125390
+      interfaz_escena1_play_24: -904208767423481027
+      interfaz_escena1_play_25: 8523176910336180783
+      interfaz_escena1_play_26: -131747502286328221
+      interfaz_escena1_play_27: 4387194095847467326
+      interfaz_escena1_play_28: 4946174793855298887
+      interfaz_escena1_play_29: 1164145039537505021
+      interfaz_escena1_play_3: 962012627685550922
+      interfaz_escena1_play_30: 4845441993287984095
+      interfaz_escena1_play_31: 3711363816900718570
+      interfaz_escena1_play_32: -2968987806198187874
+      interfaz_escena1_play_33: 860321546382644412
+      interfaz_escena1_play_34: -68383748028916420
+      interfaz_escena1_play_35: -3488494101777972114
+      interfaz_escena1_play_36: -8090621476723428542
+      interfaz_escena1_play_37: -6785623077534997805
+      interfaz_escena1_play_38: 2484850906163262415
+      interfaz_escena1_play_39: 8361604657016988037
+      interfaz_escena1_play_4: -8839832504870528762
+      interfaz_escena1_play_40: 5118223175114281029
+      interfaz_escena1_play_41: 7916831254735981182
+      interfaz_escena1_play_42: 1219221800495459632
+      interfaz_escena1_play_43: 3167515071972272201
+      interfaz_escena1_play_44: 7154262923275124
+      interfaz_escena1_play_45: -4485946949775318922
+      interfaz_escena1_play_46: -2461168186698603081
+      interfaz_escena1_play_47: 7694616346314292713
+      interfaz_escena1_play_48: 7760195275367059945
+      interfaz_escena1_play_49: 2484377565950412830
+      interfaz_escena1_play_5: -6030221496092557359
+      interfaz_escena1_play_50: 2402157770613890287
+      interfaz_escena1_play_51: 555460658685292461
+      interfaz_escena1_play_52: 2138247637676270896
+      interfaz_escena1_play_53: 2159728168266730958
+      interfaz_escena1_play_54: 1989873895036739302
+      interfaz_escena1_play_55: 4437590141687698096
+      interfaz_escena1_play_56: -1965291168797925807
+      interfaz_escena1_play_57: -7898383305535814633
+      interfaz_escena1_play_58: -3222392892375423746
+      interfaz_escena1_play_59: -9069963275855371810
+      interfaz_escena1_play_6: -2581981093518256393
+      interfaz_escena1_play_60: -869301444650000318
+      interfaz_escena1_play_61: -1085308810500705517
+      interfaz_escena1_play_62: 6252697852203109683
+      interfaz_escena1_play_63: -6940114887619302832
+      interfaz_escena1_play_64: -2040242366849674131
+      interfaz_escena1_play_65: -153845965299245195
+      interfaz_escena1_play_66: 8117302479654841603
+      interfaz_escena1_play_67: 4078583963000444385
+      interfaz_escena1_play_7: -3019492426433878197
+      interfaz_escena1_play_8: -2026024409830414996
+      interfaz_escena1_play_9: 5327211627013414132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

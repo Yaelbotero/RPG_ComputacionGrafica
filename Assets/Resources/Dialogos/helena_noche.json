@@ -1,0 +1,57 @@
+{
+  "id": "helena_noche",
+  "lineas": [
+    {
+      "hablante": "Helena",
+      "texto": "Shhh... despierta con cuidado, forastero. No hagas ruido, no quiero despertar a nadie en la taberna.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "¿Quién anda ahí? ... ¿Tú? ¿La mujer a la que Jorge echó antes?",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Hola, mi nombre es Helena. No he podido dejar de observarte puesto que se ve que eres valiente y fuerte.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Yo no soy ninguna bruja como te dijeron, aunque aquí en el pueblo todos creen que sí. Mi abuela sí fue bruja, pero eso fue hace ya muchos años...",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "En sus últimos momentos de vida mi abuela me contó una historia sobre una tumba que está a unos cuantos días de marcha de aquí...",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "...una tumba de un pagano, bastante antigua, que nadie ha podido encontrar. Decía mi abuela que estaba llena de riquezas.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Me dejó esta guía y yo ya descifré dónde está la tumba, en la aldea abandonada de Zuhayr, cerca de Sástago.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Me gustaría que me acompañes, pues nadie en este pueblo es lo suficientemente valiente para ir conmigo, y yo soy muy débil para encarar este viaje sola.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "El camino cruza el bosque y está plagado de bestias. Si me proteges, compartiremos todas las riquezas de la tumba a partes iguales.",
+      "retrato": "helena"
+    }
+  ],
+  "eleccion": {
+    "pregunta": "¿Aceptas acompañar a Helena a la tumba pagana a cambio de riquezas y aventuras?",
+    "opciones": [
+      "Aceptar",
+      "Rechazar"
+    ]
+  }
+}

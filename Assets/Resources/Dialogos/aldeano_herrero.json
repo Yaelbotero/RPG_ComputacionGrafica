@@ -1,0 +1,15 @@
+{
+  "id": "aldeano_herrero",
+  "lineas": [
+    {
+      "hablante": "Herrero Mateo",
+      "texto": "¿Vas a enfrentar los peligros del camino? Tu espada parece de buena forja, pero las bestias de aquí tienen pieles duras.",
+      "retrato": "herrero"
+    },
+    {
+      "hablante": "Herrero Mateo",
+      "texto": "No olvides llevar suficientes pociones en tu morral. En el bosque, un descuido te costará la vida.",
+      "retrato": "herrero"
+    }
+  ]
+}

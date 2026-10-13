@@ -1,0 +1,15 @@
+{
+  "id": "aldeano_posadera",
+  "lineas": [
+    {
+      "hablante": "Posadera Teresa",
+      "texto": "Ten cuidado con los forasteros y con esa chica de la que Jorge desconfía tanto. Hay miradas que traen desgracia.",
+      "retrato": "posadera"
+    },
+    {
+      "hablante": "Posadera Teresa",
+      "texto": "Nadie viaja hacia la aldea de Zuhayr desde hace años. Dicen que está maldita y que la niebla nunca se disipa.",
+      "retrato": "posadera"
+    }
+  ]
+}

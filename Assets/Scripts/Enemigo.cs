@@ -11,22 +11,13 @@ public class Enemigo : MonoBehaviour
     [Header("Detección")]
     public float distanciaParaAtacarPlayer = 5f;
 
-    [Header("Ataque")]
-    public Transform controlGolpe;
-    public float radioGolpe;
-    public float damageGolpe = 10f;
-    public float tiempoEntreAtaques = 1.5f;
-    private float tiempoSiguienteAtaque;
-
     private GameObject target;
     private Vector3 escalaInicial;
-    private Animator anim;
 
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
         escalaInicial = transform.localScale;
-        anim = GetComponent<Animator>();
 
         if (target == null)
         {
@@ -36,12 +27,6 @@ public class Enemigo : MonoBehaviour
 
     void Update()
     {
-        // Temporizador para el tiempo de enfriamiento del ataque
-        if (tiempoSiguienteAtaque > 0)
-        {
-            tiempoSiguienteAtaque -= Time.deltaTime;
-        }
-
         if (target == null)
             return;
 
@@ -57,63 +42,15 @@ public class Enemigo : MonoBehaviour
     {
         float direccion = target.transform.position.x - transform.position.x;
 
-        // INVERSIÓN DE SIGNOS: Arregla el problema de que mire al lado opuesto
-        if (direccion > 0f) // El jugador está a la derecha
+        if (direccion > 0f)
         {
-            // Ponemos el signo negativo aquí para voltear el sprite hacia la derecha
             transform.localScale = new Vector3(-Mathf.Abs(escalaInicial.x), escalaInicial.y, escalaInicial.z);
             mirandoEnemigo = true;
         }
-        else if (direccion < 0f) // El jugador está a la izquierda
+        else if (direccion < 0f)
         {
-            // Lo dejamos positivo para que mantenga su vista original hacia la izquierda
             transform.localScale = new Vector3(Mathf.Abs(escalaInicial.x), escalaInicial.y, escalaInicial.z);
             mirandoEnemigo = false;
-        }
-    }
-
-    // Se activa cuando el jugador entra en el colisionador del enemigo
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            IntentarAtacar();
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            IntentarAtacar();
-        }
-    }
-
-    private void IntentarAtacar()
-    {
-        if (tiempoSiguienteAtaque > 0)
-            return;
-
-        if (anim != null)
-        {
-            anim.SetTrigger("Enemigo_Attack");
-        }
-
-        tiempoSiguienteAtaque = tiempoEntreAtaques;
-    }
-
-    // Este es el método que llamarás desde el Evento de Animación
-    public void Atacar()
-    {
-        Collider2D[] jugadores = Physics2D.OverlapCircleAll(controlGolpe.position, radioGolpe);
-
-        foreach (Collider2D colision in jugadores)
-        {
-            if (colision.CompareTag("Player"))
-            {
-                // Busca el PlayerManager y aplica el daño
-                colision.GetComponent<PlayerManager>().getDamage(damageGolpe);
-            }
         }
     }
 
@@ -124,16 +61,6 @@ public class Enemigo : MonoBehaviour
         if (salud <= 0)
         {
             Destroy(gameObject);
-        }
-    }
-
-    // Dibuja el círculo rojo en la escena para configurar el ataque
-    private void OnDrawGizmos()
-    {
-        if (controlGolpe != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(controlGolpe.position, radioGolpe);
         }
     }
 }

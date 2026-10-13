@@ -28,6 +28,11 @@ public class Player_Attack : MonoBehaviour
             tiemSigAtaque = Mathf.Max(0f, tiemSigAtaque - Time.deltaTime);
         }
 
+        if (mov != null && mov.bloqueado)
+        {
+            return;
+        }
+
         if (Input.GetButtonDown("Fire1") && tiemSigAtaque <= 0f)
         {
             anim.SetTrigger("Attack");

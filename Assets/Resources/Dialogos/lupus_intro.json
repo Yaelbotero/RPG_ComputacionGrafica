@@ -1,0 +1,55 @@
+{
+  "id": "lupus_intro",
+  "lineas": [
+    {
+      "hablante": "Héroe",
+      "texto": "Esta gran cámara subterránea... En el centro hay una enorme losa rectangular de dos metros de alto, cubierta por un paño negro.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "¡Jajajajaja! ¡Pobre ingenuo! ¡Serviste a la perfección como el sacrificio que necesitábamos!",
+      "retrato": "helena_demonio"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "¡Helena! ¿Qué significa esto? ¿Qué haces ahí arriba?",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "¡Nunca hubo tumba pagana ni riquezas para ti! ¡Despierta, amo mío! ¡Tu encierro ha concluido!",
+      "retrato": "helena_demonio"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "Helena arranca con violencia el paño negro revelando un espejo antiguo de marcos retorcidos, mientras su piel se torna ceniza y brotan cuernos de su frente: ¡su forma demoníaca!",
+      "retrato": ""
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "Un rugido ensordecedor sacude los cimientos de la cueva. Del cristal del espejo emana una densa niebla negra de la que emerge una gigantesca figura...",
+      "retrato": ""
+    },
+    {
+      "hablante": "Lupus",
+      "texto": "¡POR FIN! ¡Siglos desterrado al olvido por caballeros insignificantes! ¡Lupus, el siervo eterno de Moloch, ha regresado!",
+      "retrato": "lupus"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "¡Lupus! ¡La leyenda que Jorge contó en la taberna! ¡El espejo de la inscripción de mi espada!",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Lupus",
+      "texto": "Esa espada no salvará tu pellejo hoy, mortal. ¡Helena, arráncale el corazón! ¡Moloch reclama su sangre!",
+      "retrato": "lupus"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "¡No permitiré que tu plaga vuelva a asolar Monegros! ¡A las armas!",
+      "retrato": "heroe"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "llegada_sastago",
+  "lineas": [
+    {
+      "hablante": "Héroe",
+      "texto": "Por fin... la aldea de Zuhayr, en los confines de Sástago. Pero... no se ve ni un alma.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Todo está en ruinas y envuelto en una niebla anormalmente espesa para esta hora. El aire apesta a podredumbre y muerte.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Helena",
+      "texto": "Mira allá adelante... Esa gran mansión abandonada con pesadas puertas de plomo. La entrada a la tumba está allí.",
+      "retrato": "helena"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Estas puertas de plomo están selladas. Ayúdame a hacer palanca...",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "¡De repente, un estruendoso rayo cae del cielo sin aviso, sacudiendo la tierra e impactando al forastero, dejándolo inconsciente al instante!",
+      "retrato": ""
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Uh... mi cabeza... ¿Dónde estoy? ... La oscuridad es absoluta. Helena no está por ningún lado.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Encenderé mi antorcha... ¡Cielos! El suelo de esta cueva está cubierto de cráneos y restos humanos descompuestos.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Debo avanzar y encontrar una salida antes de que lo que habita aquí me encuentre a mí.",
+      "retrato": "heroe"
+    }
+  ]
+}

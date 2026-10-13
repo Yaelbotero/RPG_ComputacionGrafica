@@ -1,0 +1,15 @@
+{
+  "id": "aldeano_guardia",
+  "lineas": [
+    {
+      "hablante": "Guardia Rodrigo",
+      "texto": "Tranquilo por aquí, forastero. Mientras estés dentro de la empalizada del pueblo, la ley te protege.",
+      "retrato": "guardia"
+    },
+    {
+      "hablante": "Guardia Rodrigo",
+      "texto": "Más allá de las puertas sólo reinan el frío y las alimañas. No salgas sin estar bien preparado.",
+      "retrato": "guardia"
+    }
+  ]
+}

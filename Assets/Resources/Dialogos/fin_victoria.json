@@ -1,0 +1,40 @@
+{
+  "id": "fin_victoria",
+  "lineas": [
+    {
+      "hablante": "Lupus",
+      "texto": "¡Maldito seas...! ¡Moloch... no permitas que vuelva al abismo...!",
+      "retrato": "lupus"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "Lupus y Helena se desvanecen en un torbellino de cenizas mientras el espejo maldito estalla en mil pedazos con un crujido ensordecedor.",
+      "retrato": ""
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "De repente, una luz cálida y celestial inunda la caverna, disipando la densa niebla y el hedor a muerte de siglos pasados.",
+      "retrato": ""
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Se acabó... La maldición de Monegros ha sido purgada.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "Al fondo de la sala, iluminados por la luz, yacen en paz los antiguos soldados caídos, junto a opulentos cofres rebosantes de oro, gemas y reliquias paganas.",
+      "retrato": ""
+    },
+    {
+      "hablante": "Héroe",
+      "texto": "Llenaré mi alforja con el oro que por derecho me pertenece tras semejante hazaña. El camino hacia Zaragoza me espera.",
+      "retrato": "heroe"
+    },
+    {
+      "hablante": "Narrador",
+      "texto": "Con la gloria de la victoria y una fortuna entre manos, nuestro héroe asciende a la superficie con una sonrisa, listo para emprender nuevas leyendas.",
+      "retrato": ""
+    }
+  ]
+}
