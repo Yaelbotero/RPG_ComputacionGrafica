@@ -41,7 +41,13 @@ public class NunSigueJugador : MonoBehaviour
     // Solo los colliders solidos: los triggers (interaccion con E) siguen activos.
     private void IgnorarColisionConJugador()
     {
-        if (jugador == null || enemigoGrock == null)
+        IgnorarColisionCon(jugador);
+        IgnorarColisionCon(enemigoGrock);
+    }
+
+    private void IgnorarColisionCon(Transform otro)
+    {
+        if (otro == null)
         {
             return;
         }
@@ -49,17 +55,7 @@ public class NunSigueJugador : MonoBehaviour
         foreach (Collider2D mio in GetComponents<Collider2D>())
         {
             if (mio.isTrigger) continue;
-            foreach (Collider2D suyo in jugador.GetComponentsInChildren<Collider2D>())
-            {
-                if (suyo.isTrigger) continue;
-                Physics2D.IgnoreCollision(mio, suyo, true);
-            }
-        }
-
-        foreach (Collider2D mio in GetComponents<Collider2D>())
-        {
-            if (mio.isTrigger) continue;
-            foreach (Collider2D suyo in enemigoGrock.GetComponentsInChildren<Collider2D>())
+            foreach (Collider2D suyo in otro.GetComponentsInChildren<Collider2D>())
             {
                 if (suyo.isTrigger) continue;
                 Physics2D.IgnoreCollision(mio, suyo, true);

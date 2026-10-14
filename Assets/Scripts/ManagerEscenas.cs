@@ -29,4 +29,11 @@ public class ManagerEscenas : MonoBehaviour
     {
         SceneManager.LoadScene("Pueblo Mañana", LoadSceneMode.Single);
     }
+
+    public void PuebloAbandonado()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("ManagerEscenas: Cargando escena 'Pueblo abandonado'...");
+        SceneManager.LoadScene("Pueblo abandonado", LoadSceneMode.Single);
+    }
 }
