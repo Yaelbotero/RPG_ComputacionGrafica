@@ -1,126 +1,250 @@
 
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class EncounterCombat : MonoBehaviour
 {
-    [Header("Configuracion del combate")]
-    public float tiempoEntreTurnos = 0.5f;
+    [Header("Configuracion")]
+    public float tiempoEntreTurnos = 1f;
+    public float esperaAlFinalizar = 2f;
 
-    [Header("Cantidad de enemigos")]
-    [Range(1, 4)]
-    public int minimoEnemigos = 1;
+    [Header("Escena de regreso")]
+    public string escenaExploracion = "Bosque";
 
-    [Range(1, 4)]
-    public int maximoEnemigos = 4;
+    [Header("Sprites de los cuatro enemigos")]
+    public Sprite[] spritesEnemigos = new Sprite[4];
 
-    public bool CombateActivo { get; private set; }
+    [Header("Objetos visuales")]
+    public SpriteRenderer enemigoVisual1;
+    public SpriteRenderer enemigoVisual2;
 
-    public event Action<bool> CombateTerminado;
-
-    private List<CharacterData> heroes;
+    private CharacterData heroe;
     private List<CharacterData> enemigos;
     private List<int> tiposEnemigos;
 
-    public void IniciarCombate(int primerEnemigo)
+    private int ataqueElegido = -1;
+    private int objetivoElegido = -1;
+
+    // 0 = esperando
+    // 1 = elegir ataque
+    // 2 = elegir objetivo
+    private int estado = 0;
+
+    public bool CombateActivo { get; private set; }
+
+    void Start()
+    {
+        IniciarCombate();
+    }
+
+    void Update()
+    {
+        if (!CombateActivo)
+            return;
+
+        Keyboard teclado = Keyboard.current;
+
+        if (teclado == null)
+            return;
+
+        int numero = -1;
+
+        if (teclado.digit1Key.wasPressedThisFrame ||
+            teclado.numpad1Key.wasPressedThisFrame)
+            numero = 0;
+        else if (teclado.digit2Key.wasPressedThisFrame ||
+                 teclado.numpad2Key.wasPressedThisFrame)
+            numero = 1;
+        else if (teclado.digit3Key.wasPressedThisFrame ||
+                 teclado.numpad3Key.wasPressedThisFrame)
+            numero = 2;
+
+        if (numero == -1)
+            return;
+
+        if (estado == 1)
+        {
+            if (numero < heroe.attacks.Count)
+                ataqueElegido = numero;
+        }
+        else if (estado == 2)
+        {
+            if (numero < enemigos.Count &&
+                enemigos[numero].IsAlive)
+                objetivoElegido = numero;
+        }
+    }
+
+    public void IniciarCombate()
     {
         if (CombateActivo)
             return;
 
-        // Obtener los heroes del PartyManager.
-        if (PartyManager.Instance != null)
+        if (PartyManager.Instance == null)
         {
-            heroes = PartyManager.Instance.heroes;
-        }
-        else
-        {
-            heroes = CharacterDatabase.CreateHeroes();
+            Debug.LogError(
+                "Falta PartyManager. Inicia desde Prueba de combate.");
+            return;
         }
 
-        if (!HayVivos(heroes))
+        // Usar el MISMO heroe entre escenas.
+        heroe = PartyManager.Instance.heroe;
+
+        if (heroe == null || !heroe.IsAlive)
         {
-            Debug.Log("No quedan heroes vivos.");
+            Debug.Log("El heroe no puede combatir.");
             return;
         }
 
         enemigos = new List<CharacterData>();
         tiposEnemigos = new List<int>();
 
-        int minimo = Mathf.Clamp(minimoEnemigos, 1, 4);
-        int maximo = Mathf.Clamp(maximoEnemigos, minimo, 4);
+        int cantidad = Mathf.Clamp(
+            EncounterManager.cantidadEnemigos, 1, 2);
 
-        int cantidad = UnityEngine.Random.Range(
-            minimo, maximo + 1);
-
-        Debug.Log("================================");
-        Debug.Log("ENCUENTRO ALEATORIO");
-        Debug.Log("Cantidad de enemigos: " + cantidad);
-
+        // Cada enemigo puede ser de cualquiera de los 4 tipos.
         for (int i = 0; i < cantidad; i++)
         {
-            int tipo = i == 0
-                ? Mathf.Clamp(primerEnemigo, 0, 3)
-                : UnityEngine.Random.Range(0, 4);
+            int tipo = Random.Range(0, 4);
 
             CharacterData enemigo =
                 CharacterDatabase.CreateForestEnemy(tipo);
 
             enemigos.Add(enemigo);
             tiposEnemigos.Add(tipo);
-
-            Debug.Log("Enemigo " + (i + 1) + ": " +
-                enemigo.characterName +
-                " | HP: " + enemigo.currentHealth +
-                " | Ataque: " + enemigo.attacks[0]);
         }
 
+        ConfigurarSprites();
+
         CombateActivo = true;
+
+        Debug.Log("=== INICIO DEL COMBATE ===");
+        Debug.Log("Cantidad de enemigos: " + cantidad);
+
+        Debug.Log(heroe.characterName +
+            " | Fuerza: " + heroe.strength +
+            " | Vida: " + heroe.currentHealth +
+            "/" + heroe.maxHealth);
+
+        MostrarEnemigos();
+
+        PartyManager.Instance.MostrarInventario();
 
         StartCoroutine(SistemaTurnos());
     }
 
-    private IEnumerator SistemaTurnos()
+    void ConfigurarSprites()
+    {
+        if (enemigoVisual1 != null)
+            enemigoVisual1.gameObject.SetActive(false);
+
+        if (enemigoVisual2 != null)
+            enemigoVisual2.gameObject.SetActive(false);
+
+        for (int i = 0; i < enemigos.Count; i++)
+        {
+            SpriteRenderer visual =
+                i == 0 ? enemigoVisual1 : enemigoVisual2;
+
+            int tipo = tiposEnemigos[i];
+
+            if (visual == null)
+                continue;
+
+            if (spritesEnemigos != null &&
+                tipo < spritesEnemigos.Length &&
+                spritesEnemigos[tipo] != null)
+            {
+                visual.sprite = spritesEnemigos[tipo];
+            }
+
+            visual.gameObject.SetActive(true);
+        }
+    }
+
+    IEnumerator SistemaTurnos()
     {
         int ronda = 1;
 
-        while (HayVivos(heroes) && HayVivos(enemigos))
+        while (heroe.IsAlive && HayEnemigosVivos())
         {
-            Debug.Log("========== RONDA " + ronda + " ==========");
+            Debug.Log("=== RONDA " + ronda + " ===");
 
-            // Turnos de los heroes.
-            foreach (CharacterData heroe in heroes)
+            ataqueElegido = -1;
+            objetivoElegido = -1;
+
+            Debug.Log("TURNO DEL HEROE");
+            Debug.Log("ELIGE UN ATAQUE:");
+
+            for (int i = 0; i < heroe.attacks.Count; i++)
             {
-                if (!heroe.IsAlive)
-                    continue;
-
-                if (!HayVivos(enemigos))
-                    break;
-
-                CharacterData objetivo = ElegirVivo(enemigos);
-
-                RealizarAtaque(heroe, objetivo);
-
-                yield return new WaitForSeconds(
-                    Mathf.Max(0f, tiempoEntreTurnos));
+                Debug.Log((i + 1) + ". " +
+                    heroe.attacks[i]);
             }
 
-            if (!HayVivos(enemigos))
+            estado = 1;
+
+            yield return new WaitUntil(
+                () => ataqueElegido >= 0);
+
+            estado = 0;
+
+            string ataque = heroe.attacks[ataqueElegido];
+
+            int cantidadVivos = 0;
+            int unicoVivo = -1;
+
+            for (int i = 0; i < enemigos.Count; i++)
+            {
+                if (enemigos[i].IsAlive)
+                {
+                    cantidadVivos++;
+                    unicoVivo = i;
+                }
+            }
+
+            if (cantidadVivos == 1)
+            {
+                objetivoElegido = unicoVivo;
+            }
+            else
+            {
+                Debug.Log("ELIGE OBJETIVO:");
+                MostrarEnemigos();
+                Debug.Log("Pulsa 1 o 2.");
+
+                estado = 2;
+
+                yield return new WaitUntil(
+                    () => objetivoElegido >= 0);
+
+                estado = 0;
+            }
+
+            CharacterData objetivo =
+                enemigos[objetivoElegido];
+
+            Atacar(heroe, objetivo, ataque);
+
+            yield return new WaitForSeconds(
+                Mathf.Max(0f, tiempoEntreTurnos));
+
+            if (!HayEnemigosVivos())
                 break;
 
-            // Turnos de los enemigos.
+            // Los enemigos vivos atacan automaticamente.
             foreach (CharacterData enemigo in enemigos)
             {
-                if (!enemigo.IsAlive)
+                if (!enemigo.IsAlive || !heroe.IsAlive)
                     continue;
 
-                if (!HayVivos(heroes))
-                    break;
+                Debug.Log("TURNO DE " +
+                    enemigo.characterName);
 
-                CharacterData objetivo = ElegirVivo(heroes);
-
-                RealizarAtaque(enemigo, objetivo);
+                Atacar(enemigo, heroe, enemigo.attacks[0]);
 
                 yield return new WaitForSeconds(
                     Mathf.Max(0f, tiempoEntreTurnos));
@@ -129,154 +253,114 @@ public class EncounterCombat : MonoBehaviour
             ronda++;
         }
 
-        FinalizarCombate();
+        estado = 0;
+
+        yield return StartCoroutine(FinalizarCombate());
     }
 
-    private void RealizarAtaque(
+    void Atacar(
         CharacterData atacante,
-        CharacterData objetivo)
+        CharacterData objetivo,
+        string formula)
     {
-        if (objetivo == null ||
-            !objetivo.IsAlive ||
-            !atacante.IsAlive)
+        if (!atacante.IsAlive || !objetivo.IsAlive)
             return;
-
-        Debug.Log("--- TURNO DE " +
-            atacante.characterName + " ---");
 
         Debug.Log(atacante.characterName +
-            " intenta atacar a " + objetivo.characterName);
+            " ataca a " + objetivo.characterName);
 
-        // Tirada de exito 1D10.
-        if (!DiceSystem.RollSuccess())
-        {
-            Debug.Log("El ataque falla.");
-            return;
-        }
+        Debug.Log("Ataque: " + formula);
 
-        string ataque = atacante.GetRandomAttack();
-
-        Debug.Log("Ataque: " + ataque);
-
-        // Suma de todos los dados del ataque.
-        int dano = DiceSystem.RollAttack(ataque);
+        int dano = DiceSystem.RollAttack(formula);
 
         objetivo.TakeDamage(dano);
 
         Debug.Log("Dano causado: " + dano);
 
         Debug.Log(objetivo.characterName +
-            " HP: " + objetivo.currentHealth +
+            " | HP: " + objetivo.currentHealth +
             "/" + objetivo.maxHealth);
 
         if (!objetivo.IsAlive)
         {
             Debug.Log(objetivo.characterName +
-                " HA SIDO DERROTADO.");
+                " DERROTADO");
+
+            int indice = enemigos.IndexOf(objetivo);
+
+            if (indice >= 0)
+            {
+                SpriteRenderer visual =
+                    indice == 0
+                    ? enemigoVisual1
+                    : enemigoVisual2;
+
+                if (visual != null)
+                    visual.gameObject.SetActive(false);
+            }
         }
     }
 
-    private bool HayVivos(List<CharacterData> grupo)
+    bool HayEnemigosVivos()
     {
-        return grupo.Exists(personaje => personaje.IsAlive);
+        return enemigos.Exists(e => e.IsAlive);
     }
 
-    private CharacterData ElegirVivo(
-        List<CharacterData> grupo)
+    void MostrarEnemigos()
     {
-        List<CharacterData> vivos = grupo.FindAll(
-            personaje => personaje.IsAlive);
+        Debug.Log("=== ENEMIGOS ===");
 
-        if (vivos.Count == 0)
-            return null;
+        for (int i = 0; i < enemigos.Count; i++)
+        {
+            CharacterData enemigo = enemigos[i];
 
-        int indice = UnityEngine.Random.Range(0, vivos.Count);
-
-        return vivos[indice];
+            Debug.Log((i + 1) + ". " +
+                enemigo.characterName +
+                " | Fuerza: " + enemigo.strength +
+                " | HP: " + enemigo.currentHealth +
+                "/" + enemigo.maxHealth +
+                (enemigo.IsAlive ? "" : " (DERROTADO)"));
+        }
     }
 
-    private void FinalizarCombate()
+    IEnumerator FinalizarCombate()
     {
-        bool victoria = !HayVivos(enemigos);
+        CombateActivo = false;
 
         Debug.Log("================================");
 
-        if (victoria)
+        if (heroe.IsAlive)
         {
-            Debug.Log("VICTORIA DE LOS HEROES");
-            MostrarRecompensas();
+            Debug.Log("VICTORIA DEL HEROE");
+
+            // Entregar una manzana o pocion.
+            PartyManager.Instance.AgregarRecompensa();
+
+            // Guardar el patrullero como derrotado.
+            EncounterManager.RegistrarVictoria();
+
+            Debug.Log("Vida conservada: " +
+                heroe.currentHealth +
+                "/" + heroe.maxHealth);
+
+            Debug.Log("Regresando a exploracion...");
+
+            yield return new WaitForSeconds(
+                Mathf.Max(0f, esperaAlFinalizar));
+
+            SceneManager.LoadScene(escenaExploracion);
         }
         else
         {
-            Debug.Log("DERROTA DE LOS HEROES");
+            Debug.Log("DERROTA DEL HEROE");
+
+            Debug.Log("Vida final: " +
+                heroe.currentHealth +
+                "/" + heroe.maxHealth);
+
+            Debug.Log("FIN DE LA PARTIDA");
+
+            // No regresar con 0 HP.
         }
-
-        Debug.Log("=== ESTADO FINAL DE LOS HEROES ===");
-
-        foreach (CharacterData heroe in heroes)
-        {
-            Debug.Log(heroe.characterName +
-                ": " + heroe.currentHealth +
-                "/" + heroe.maxHealth + " HP");
-        }
-
-        Debug.Log("COMBATE FINALIZADO");
-        Debug.Log("================================");
-
-        CombateActivo = false;
-
-        CombateTerminado?.Invoke(victoria);
-    }
-
-    private void MostrarRecompensas()
-    {
-        Debug.Log("=== RECOMPENSAS DEL COMBATE ===");
-
-        if (PartyManager.Instance == null)
-        {
-            Debug.LogWarning(
-                "No se encontro PartyManager.");
-            return;
-        }
-
-        // Recompensa por cada enemigo derrotado.
-        for (int i = 0; i < tiposEnemigos.Count; i++)
-        {
-            int tipo = tiposEnemigos[i];
-
-            switch (tipo)
-            {
-                case 0:
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Pociones", 3);
-
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Dinero", 100);
-                    break;
-
-                case 1:
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Cofres", 1);
-                    break;
-
-                case 2:
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Pociones", 4);
-
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Dinero", 250);
-                    break;
-
-                case 3:
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Pociones", 1);
-
-                    PartyManager.Instance.AgregarRecompensa(
-                        "Dinero", 350);
-                    break;
-            }
-        }
-
-        PartyManager.Instance.MostrarRecompensas();
     }
 }

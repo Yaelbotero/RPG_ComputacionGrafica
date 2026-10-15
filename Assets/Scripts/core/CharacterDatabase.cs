@@ -3,30 +3,14 @@ using System.Collections.Generic;
 
 public static class CharacterDatabase
 {
-    // Cuatro heroes del juego.
-    public static List<CharacterData> CreateHeroes()
+    public static CharacterData CreateHero()
     {
-        return new List<CharacterData>
-        {
-            new CharacterData(
-                "Heroe 1", 19, 68,
-                "1D10+1D4", "2D6"),
-
-            new CharacterData(
-                "Heroe 2", 23, 87,
-                "1D10", "1D10+1D4", "1D10+2D4"),
-
-            new CharacterData(
-                "Heroe 3", 17, 50,
-                "1D10+1D6"),
-
-            new CharacterData(
-                "Heroe 4", 16, 38,
-                "1D6+1D8")
-        };
+        return new CharacterData(
+            "Heroe 2", 23, 87,
+            "1D10", "1D10+1D4", "1D10+2D4"
+        );
     }
 
-    // Los cuatro enemigos del bosque.
     public static CharacterData CreateForestEnemy(int index)
     {
         switch (index)
@@ -52,18 +36,15 @@ public static class CharacterDatabase
         }
     }
 
-    // Jefes de la batalla final.
     public static List<CharacterData> CreateBosses()
     {
         return new List<CharacterData>
         {
             new CharacterData(
-                "Lupus", 20, 82,
-                "1D4+1D6", "2D6"),
+                "Lupus", 20, 82, "1D4+1D6", "2D6"),
 
             new CharacterData(
-                "Helena", 18, 35,
-                "1D8+1D6")
+                "Helena", 18, 35, "1D8+1D6")
         };
     }
 }

@@ -3,59 +3,41 @@ using UnityEngine;
 
 public static class DiceSystem
 {
-    // Lanza un dado de cualquier cantidad de caras.
-    public static int Roll(int sides)
+    // Lanza un dado y devuelve el resultado.
+    public static int Roll(int caras)
     {
-        return Random.Range(1, sides + 1);
+        return Random.Range(1, caras + 1);
     }
 
-    // Tirada de exito general (1D10).
-    // 1 a 3: Fallo.
-    // 4 a 10: Exito.
-    public static bool RollSuccess()
-    {
-        int result = Roll(10);
-
-        Debug.Log("Tirada de exito D10: " + result);
-
-        if (result <= 3)
-        {
-            Debug.Log("FALLO: El ataque no acierta.");
-            return false;
-        }
-
-        Debug.Log("EXITO: El ataque acierta.");
-        return true;
-    }
-
-    // Lanza los dados de un ataque y suma resultados.
-    // Ejemplo: 1D10+1D4 o 2D6.
+    // Calcula el daño a partir de los dados del ataque.
+    // Ejemplos: 1D6, 1D10+1D4, 1D10+2D4.
     public static int RollAttack(string formula)
     {
-        int totalDamage = 0;
+        int danoTotal = 0;
 
-        string[] parts = formula.ToUpper()
-            .Replace(" ", "").Split('+');
+        string[] partes = formula.ToUpper()
+            .Replace(" ", "")
+            .Split('+');
 
-        foreach (string part in parts)
+        foreach (string parte in partes)
         {
-            string[] values = part.Split('D');
+            string[] valores = parte.Split('D');
 
-            int amount = int.Parse(values[0]);
-            int sides = int.Parse(values[1]);
+            int cantidad = int.Parse(valores[0]);
+            int caras = int.Parse(valores[1]);
 
-            for (int i = 0; i < amount; i++)
+            for (int i = 0; i < cantidad; i++)
             {
-                int result = Roll(sides);
+                int resultado = Roll(caras);
 
-                Debug.Log("D" + sides + ": " + result);
+                Debug.Log("D" + caras + ": " + resultado);
 
-                totalDamage += result;
+                danoTotal += resultado;
             }
         }
 
-        Debug.Log("DANO TOTAL: " + totalDamage);
+        Debug.Log("DANO TOTAL: " + danoTotal);
 
-        return totalDamage;
+        return danoTotal;
     }
 }

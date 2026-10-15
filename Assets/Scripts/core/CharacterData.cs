@@ -24,7 +24,6 @@ public class CharacterData
     {
         characterName = name;
         this.strength = strength;
-
         maxHealth = health;
         currentHealth = health;
 
@@ -41,11 +40,5 @@ public class CharacterData
     {
         currentHealth = Mathf.Min(
             maxHealth, currentHealth + Mathf.Max(0, amount));
-    }
-
-    public string GetRandomAttack()
-    {
-        int index = Random.Range(0, attacks.Count);
-        return attacks[index];
     }
 }
