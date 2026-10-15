@@ -12,6 +12,9 @@ public class Movimiento : MonoBehaviour
     private bool mirandoDerecha = true;
     public bool attack = false;
 
+    // Impide moverse, saltar y atacar mientras el jugador interactua con un NPC.
+    public bool bloqueado = false;
+
     [Header("Salto")]
     public float speedSalto = 8f;
     public Transform checkPiso;
@@ -34,6 +37,14 @@ void Update()
         }
 
         // Un ataque aéreo no debe bloquear el movimiento al aterrizar.
+        if (bloqueado)
+        {
+            attack = false;
+            horizontal = 0f;
+            anim.SetFloat("Caminar", 0f);
+            return;
+        }
+
         if (attack && !enSuelo)
         {
             attack = false;

@@ -7,17 +7,32 @@ public class TextManagerNun : MonoBehaviour
     [SerializeField] private GameObject señalDialogo;
     [SerializeField] private GameObject dialogoPanel;
     [SerializeField] private TMP_Text textoDialogo;
+    [SerializeField] private DialogoNPC dialogo;
+    [SerializeField] private TextManager barista;
+    [SerializeField] private DialogoNPC dialogoNoche;
+    // Respaldo: se usa solo si no hay un DialogoNPC asignado.
     [SerializeField, TextArea(4,6)]private string[] lineasDeDialogo;
     private float tiempoEscritura = 0.05f;
     private bool elJugadorEstaEnRango = false;
     private bool elJugadorEstaHablando = false;
     private int indiceLinea = 0;
     private Transform jugadorEnRango;
+    private Movimiento movimientoJugador;
     private SpriteRenderer spriteRendererMonja;
+    [SerializeField] private Vector2 destinoAlTerminar = new Vector2(9.45f, -3.171f);
+    [SerializeField] private bool caminarAlTerminar = true;
+    private NunController nunController;
+    private bool yaSeFue = false;
 
     private void Awake()
     {
         spriteRendererMonja = GetComponent<SpriteRenderer>();
+        nunController = GetComponent<NunController>();
+
+        if (dialogo != null && dialogo.lineas != null && dialogo.lineas.Length > 0)
+        {
+            lineasDeDialogo = dialogo.lineas;
+        }
     }
 
     private void Update()
@@ -42,10 +57,50 @@ public class TextManagerNun : MonoBehaviour
             }
             if (indiceLinea >= lineasDeDialogo.Length)
             {
-                MirarAlLadoOpuesto();
                 elJugadorEstaHablando = false;
-                
+                BloquearJugador(false);
+                if (caminarAlTerminar)
+                {
+                    MirarAlLadoOpuesto();
+                    CaminarAlDestino();
+                }
             }
+        }
+    }
+
+    // Al terminar la conversacion la monja camina (con animacion) hasta el destino.
+    private void CaminarAlDestino()
+    {
+        if (yaSeFue || nunController == null)
+        {
+            return;
+        }
+
+        yaSeFue = true;
+        if (spriteRendererMonja != null)
+        {
+            spriteRendererMonja.flipX = destinoAlTerminar.x < transform.position.x;
+        }
+        nunController.IniciarCaminata(destinoAlTerminar);
+        StartCoroutine(AvisarAlLlegar());
+    }
+
+    private IEnumerator AvisarAlLlegar()
+    {
+        yield return new WaitUntil(() => nunController.CaminataTerminada);
+        PlayerManager.puertaHabilitada = true;
+        if (barista != null && dialogoNoche != null)
+        {
+            barista.IniciarDialogo(dialogoNoche);
+        }
+    }
+
+    // Bloquea o libera el movimiento y el ataque del jugador durante la conversacion.
+    private void BloquearJugador(bool bloquear)
+    {
+        if (movimientoJugador != null)
+        {
+            movimientoJugador.bloqueado = bloquear;
         }
     }
 
@@ -57,6 +112,7 @@ public class TextManagerNun : MonoBehaviour
         }
 
         elJugadorEstaHablando = true;
+        BloquearJugador(true);
         dialogoPanel.SetActive(true);
         if (señalDialogo != null)
         {
@@ -77,6 +133,7 @@ public class TextManagerNun : MonoBehaviour
         else
         {
             elJugadorEstaHablando = false;
+            BloquearJugador(false);
 
             if (dialogoPanel != null)
             {
@@ -112,6 +169,7 @@ public class TextManagerNun : MonoBehaviour
         {
             elJugadorEstaEnRango = true;
             jugadorEnRango = collision.transform;
+            movimientoJugador = collision.GetComponentInParent<Movimiento>();
 
             if (señalDialogo != null && !elJugadorEstaHablando)
             {
