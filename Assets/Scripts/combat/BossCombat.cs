@@ -15,6 +15,8 @@ public class BossCombat : MonoBehaviour
 
     [Header("Configuracion")]
     public float tiempoEntreTurnos = 1f;
+    [Tooltip("Altura (mundo) del piso del fondo donde se paran el heroe y los jefes")]
+    public float pisoSuelo = -3.25f;
 
     private CharacterData heroe;
     private CharacterData lupus;
@@ -34,7 +36,7 @@ public class BossCombat : MonoBehaviour
     private bool usarUI = false;
 
     [Header("Escena al ganar")]
-    public string escenaVictoria = "Final";
+    public string escenaVictoria = "Menu"; // al ganar la pelea final se vuelve al menu ("Final" es la escena previa a esta pelea)
 
     void Start()
     {
@@ -83,14 +85,15 @@ public class BossCombat : MonoBehaviour
         {
             // Estilo Pokemon: heroe abajo a la izquierda, jefes arriba a la derecha.
             GameObject personaje = GameObject.Find("Personaje");
-            CombateUI.ColocarPokemon(
+            CombateUI.ColocarEnSuelo(
                 personaje != null ? personaje.transform : null,
                 new Transform[]
                 {
                     lupusVisual != null ? lupusVisual.transform : null,
                     helenaVisual != null ? helenaVisual.transform : null
                 },
-                new float[] { 0.65f, 1.1f });
+                new float[] { 0.65f, 1.1f },
+                pisoSuelo);
         }
 
         yield return StartCoroutine(SistemaTurnos());

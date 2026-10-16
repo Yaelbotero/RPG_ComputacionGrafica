@@ -64,6 +64,38 @@ namespace RPG.UI
             else CrearPlataforma(xs[0], PisoEnemigosY, 4.4f, 0.8f, 5);
         }
 
+        /// <summary>
+        /// Version para peleas donde el fondo ya tiene un piso: heroe y enemigos quedan de pie sobre el mismo piso
+        /// (sin plataformas flotantes ni halos), con la misma escala y orden que en Colocar.
+        /// </summary>
+        public static void ColocarEnSuelo(Transform heroe, Transform[] enemigos, float[] escalas, float pisoY)
+        {
+            int n = 0;
+            if (enemigos != null) for (int k = 0; k < enemigos.Length; k++) if (enemigos[k] != null) n++;
+
+            if (heroe != null)
+            {
+                heroe.localScale = heroe.localScale * (n > 1 ? 1.08f : 1.28f);
+                SpriteRenderer sh = heroe.GetComponent<SpriteRenderer>();
+                ApoyarEnPiso(heroe, sh, XHeroe, pisoY);
+                if (sh != null) sh.sortingOrder = 6;
+            }
+
+            if (enemigos == null) return;
+            float[] xs = n > 1 ? new float[] { 6.0f, 3.2f } : new float[] { 4.8f };
+            for (int i = 0; i < enemigos.Length && i < xs.Length; i++)
+            {
+                Transform en = enemigos[i];
+                if (en == null) continue;
+                if (escalas != null && i < escalas.Length && escalas[i] > 0f)
+                    en.localScale = en.localScale * escalas[i];
+                SpriteRenderer se = en.GetComponent<SpriteRenderer>();
+                if (se != null) se.color = Color.white;
+                ApoyarEnPiso(en, se, xs[i], pisoY);
+                if (se != null) se.sortingOrder = 5;
+            }
+        }
+
         /// <summary>Mueve el personaje para que su pixel mas bajo toque piesY.</summary>
         private static void ApoyarEnPiso(Transform t, SpriteRenderer sr, float x, float piesY)
         {

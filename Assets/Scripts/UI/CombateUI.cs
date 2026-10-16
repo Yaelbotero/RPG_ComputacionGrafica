@@ -73,7 +73,12 @@ namespace RPG.UI
         /// Coloca a los personajes como en Pokemon: el heroe abajo a la izquierda y los enemigos arriba a la derecha.
         /// Las posiciones estan en unidades del mundo (la camara de combate es fija: 17.8 x 10 unidades).
         /// </summary>
-public static void ColocarPokemon(Transform heroe, Transform[] enemigos, float[] escalas)
+public static void ColocarEnSuelo(Transform heroe, Transform[] enemigos, float[] escalas, float pisoY)
+        {
+            CombateEscena.ColocarEnSuelo(heroe, enemigos, escalas, pisoY);
+        }
+
+        public static void ColocarPokemon(Transform heroe, Transform[] enemigos, float[] escalas)
         {
             CombateEscena.Colocar(heroe, enemigos, escalas);
         }
