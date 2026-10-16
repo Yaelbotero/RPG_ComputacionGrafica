@@ -10,6 +10,9 @@ public class EncounterCombat : MonoBehaviour
     [Header("Configuracion")]
     public float tiempoEntreTurnos = 1f;
     public float esperaAlFinalizar = 2f;
+    public float esperaAnimacionAtaque = 0.5f;
+    public float esperaAnimacionDano = 0.5f;
+    public float esperaAnimacionMuerte = 1f;
 
     [Header("Escena de regreso")]
     public string escenaExploracion = "Bosque";
@@ -17,9 +20,17 @@ public class EncounterCombat : MonoBehaviour
     [Header("Sprites de los cuatro enemigos")]
     public Sprite[] spritesEnemigos = new Sprite[4];
 
+    [Header("Animator Controllers por tipo")]
+    public RuntimeAnimatorController[] controladoresEnemigos =
+        new RuntimeAnimatorController[4];
+
     [Header("Objetos visuales")]
     public SpriteRenderer enemigoVisual1;
     public SpriteRenderer enemigoVisual2;
+
+    [Header("Animators de los objetos visuales")]
+    public Animator animatorEnemigo1;
+    public Animator animatorEnemigo2;
 
     private CharacterData heroe;
     private List<CharacterData> enemigos;
@@ -42,39 +53,40 @@ public class EncounterCombat : MonoBehaviour
 
     void Update()
     {
-        if (!CombateActivo)
+        if (!CombateActivo || Keyboard.current == null)
             return;
 
         Keyboard teclado = Keyboard.current;
-
-        if (teclado == null)
-            return;
-
         int numero = -1;
 
         if (teclado.digit1Key.wasPressedThisFrame ||
             teclado.numpad1Key.wasPressedThisFrame)
+        {
             numero = 0;
+        }
         else if (teclado.digit2Key.wasPressedThisFrame ||
                  teclado.numpad2Key.wasPressedThisFrame)
+        {
             numero = 1;
+        }
         else if (teclado.digit3Key.wasPressedThisFrame ||
                  teclado.numpad3Key.wasPressedThisFrame)
+        {
             numero = 2;
+        }
 
         if (numero == -1)
             return;
 
-        if (estado == 1)
+        if (estado == 1 && numero < heroe.attacks.Count)
         {
-            if (numero < heroe.attacks.Count)
-                ataqueElegido = numero;
+            ataqueElegido = numero;
         }
-        else if (estado == 2)
+        else if (estado == 2 &&
+                 numero < enemigos.Count &&
+                 enemigos[numero].IsAlive)
         {
-            if (numero < enemigos.Count &&
-                enemigos[numero].IsAlive)
-                objetivoElegido = numero;
+            objetivoElegido = numero;
         }
     }
 
@@ -86,11 +98,10 @@ public class EncounterCombat : MonoBehaviour
         if (PartyManager.Instance == null)
         {
             Debug.LogError(
-                "Falta PartyManager. Inicia desde Prueba de combate.");
+                "Falta PartyManager. Inicia desde Pueblo.");
             return;
         }
 
-        // Usar el MISMO heroe entre escenas.
         heroe = PartyManager.Instance.heroe;
 
         if (heroe == null || !heroe.IsAlive)
@@ -105,7 +116,8 @@ public class EncounterCombat : MonoBehaviour
         int cantidad = Mathf.Clamp(
             EncounterManager.cantidadEnemigos, 1, 2);
 
-        // Cada enemigo puede ser de cualquiera de los 4 tipos.
+        // Solo se elige aleatoriamente el tipo.
+        // Sus estadisticas siempre son fijas.
         for (int i = 0; i < cantidad; i++)
         {
             int tipo = Random.Range(0, 4);
@@ -117,7 +129,7 @@ public class EncounterCombat : MonoBehaviour
             tiposEnemigos.Add(tipo);
         }
 
-        ConfigurarSprites();
+        ConfigurarEnemigosVisuales();
 
         CombateActivo = true;
 
@@ -126,39 +138,56 @@ public class EncounterCombat : MonoBehaviour
 
         Debug.Log(heroe.characterName +
             " | Fuerza: " + heroe.strength +
-            " | Vida: " + heroe.currentHealth +
+            " | HP: " + heroe.currentHealth +
             "/" + heroe.maxHealth);
 
         MostrarEnemigos();
-
         PartyManager.Instance.MostrarInventario();
 
         StartCoroutine(SistemaTurnos());
     }
 
-    void ConfigurarSprites()
+    void ConfigurarEnemigosVisuales()
     {
-        if (enemigoVisual1 != null)
-            enemigoVisual1.gameObject.SetActive(false);
-
-        if (enemigoVisual2 != null)
-            enemigoVisual2.gameObject.SetActive(false);
-
-        for (int i = 0; i < enemigos.Count; i++)
+        // Configurar ambos espacios visuales.
+        for (int i = 0; i < 2; i++)
         {
-            SpriteRenderer visual =
-                i == 0 ? enemigoVisual1 : enemigoVisual2;
-
-            int tipo = tiposEnemigos[i];
+            SpriteRenderer visual = ObtenerVisual(i);
+            Animator animator = ObtenerAnimator(i);
 
             if (visual == null)
                 continue;
 
+            // Evitar que quede el controlador del
+            // enemigo anterior en esta posicion.
+            if (animator != null)
+            {
+                animator.runtimeAnimatorController = null;
+            }
+
+            visual.gameObject.SetActive(false);
+
+            if (i >= enemigos.Count)
+                continue;
+
+            int tipo = tiposEnemigos[i];
+
+            // Asignar el sprite base del tipo.
             if (spritesEnemigos != null &&
                 tipo < spritesEnemigos.Length &&
                 spritesEnemigos[tipo] != null)
             {
                 visual.sprite = spritesEnemigos[tipo];
+            }
+
+            // Asignar su Animator Controller.
+            if (animator != null &&
+                controladoresEnemigos != null &&
+                tipo < controladoresEnemigos.Length &&
+                controladoresEnemigos[tipo] != null)
+            {
+                animator.runtimeAnimatorController =
+                    controladoresEnemigos[tipo];
             }
 
             visual.gameObject.SetActive(true);
@@ -194,6 +223,7 @@ public class EncounterCombat : MonoBehaviour
 
             string ataque = heroe.attacks[ataqueElegido];
 
+            // Contar enemigos vivos.
             int cantidadVivos = 0;
             int unicoVivo = -1;
 
@@ -227,22 +257,37 @@ public class EncounterCombat : MonoBehaviour
             CharacterData objetivo =
                 enemigos[objetivoElegido];
 
+            // ATAQUE DEL HEROE
             Atacar(heroe, objetivo, ataque);
 
-            yield return new WaitForSeconds(
-                Mathf.Max(0f, tiempoEntreTurnos));
+            // Hurt si sobrevive, Death si muere.
+            yield return StartCoroutine(
+                AnimarResultadoEnemigo(
+                    objetivoElegido,
+                    !objetivo.IsAlive));
 
             if (!HayEnemigosVivos())
                 break;
 
-            // Los enemigos vivos atacan automaticamente.
-            foreach (CharacterData enemigo in enemigos)
+            yield return new WaitForSeconds(
+                Mathf.Max(0f, tiempoEntreTurnos));
+
+            // TURNOS DE LOS ENEMIGOS
+            for (int i = 0; i < enemigos.Count; i++)
             {
+                CharacterData enemigo = enemigos[i];
+
                 if (!enemigo.IsAlive || !heroe.IsAlive)
                     continue;
 
                 Debug.Log("TURNO DE " +
                     enemigo.characterName);
+
+                // Reproducir el ataque del tipo correcto.
+                ActivarAnimacion(i, "Atacar");
+
+                yield return new WaitForSeconds(
+                    Mathf.Max(0f, esperaAnimacionAtaque));
 
                 Atacar(enemigo, heroe, enemigo.attacks[0]);
 
@@ -256,6 +301,71 @@ public class EncounterCombat : MonoBehaviour
         estado = 0;
 
         yield return StartCoroutine(FinalizarCombate());
+    }
+
+    Animator ObtenerAnimator(int indice)
+    {
+        return indice == 0
+            ? animatorEnemigo1
+            : animatorEnemigo2;
+    }
+
+    SpriteRenderer ObtenerVisual(int indice)
+    {
+        return indice == 0
+            ? enemigoVisual1
+            : enemigoVisual2;
+    }
+
+    void ActivarAnimacion(int indice, string trigger)
+    {
+        Animator animator = ObtenerAnimator(indice);
+
+        if (animator == null ||
+            !animator.isActiveAndEnabled ||
+            animator.runtimeAnimatorController == null)
+        {
+            return;
+        }
+
+        // Evitar advertencias si el controlador
+        // no contiene el parametro solicitado.
+        foreach (AnimatorControllerParameter parametro
+                 in animator.parameters)
+        {
+            if (parametro.name == trigger &&
+                parametro.type ==
+                AnimatorControllerParameterType.Trigger)
+            {
+                animator.SetTrigger(trigger);
+                return;
+            }
+        }
+    }
+
+    IEnumerator AnimarResultadoEnemigo(
+        int indice,
+        bool murio)
+    {
+        SpriteRenderer visual = ObtenerVisual(indice);
+
+        if (murio)
+        {
+            ActivarAnimacion(indice, "Morir");
+
+            yield return new WaitForSeconds(
+                Mathf.Max(0f, esperaAnimacionMuerte));
+
+            if (visual != null)
+                visual.gameObject.SetActive(false);
+        }
+        else
+        {
+            ActivarAnimacion(indice, "RecibirDano");
+
+            yield return new WaitForSeconds(
+                Mathf.Max(0f, esperaAnimacionDano));
+        }
     }
 
     void Atacar(
@@ -285,19 +395,6 @@ public class EncounterCombat : MonoBehaviour
         {
             Debug.Log(objetivo.characterName +
                 " DERROTADO");
-
-            int indice = enemigos.IndexOf(objetivo);
-
-            if (indice >= 0)
-            {
-                SpriteRenderer visual =
-                    indice == 0
-                    ? enemigoVisual1
-                    : enemigoVisual2;
-
-                if (visual != null)
-                    visual.gameObject.SetActive(false);
-            }
         }
     }
 
@@ -327,23 +424,16 @@ public class EncounterCombat : MonoBehaviour
     {
         CombateActivo = false;
 
-        Debug.Log("================================");
-
         if (heroe.IsAlive)
         {
-            Debug.Log("VICTORIA DEL HEROE");
+            Debug.Log("=== VICTORIA ===");
 
-            // Entregar una manzana o pocion.
             PartyManager.Instance.AgregarRecompensa();
-
-            // Guardar el patrullero como derrotado.
             EncounterManager.RegistrarVictoria();
 
             Debug.Log("Vida conservada: " +
                 heroe.currentHealth +
                 "/" + heroe.maxHealth);
-
-            Debug.Log("Regresando a exploracion...");
 
             yield return new WaitForSeconds(
                 Mathf.Max(0f, esperaAlFinalizar));
@@ -352,15 +442,8 @@ public class EncounterCombat : MonoBehaviour
         }
         else
         {
-            Debug.Log("DERROTA DEL HEROE");
-
-            Debug.Log("Vida final: " +
-                heroe.currentHealth +
-                "/" + heroe.maxHealth);
-
+            Debug.Log("=== DERROTA ===");
             Debug.Log("FIN DE LA PARTIDA");
-
-            // No regresar con 0 HP.
         }
     }
 }
