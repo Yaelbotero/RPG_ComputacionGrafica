@@ -24,6 +24,15 @@ public class TextManagerNun : MonoBehaviour
     private NunController nunController;
     private bool yaSeFue = false;
 
+    // Si es true, el diálogo solo se puede tener una vez (la señal no vuelve a aparecer).
+    [SerializeField] private bool soloUnaVez = false;
+    private bool yaHablo = false;
+
+    /// <summary>
+    /// Se invoca cuando el jugador termina de leer la última línea del diálogo.
+    /// </summary>
+    public event System.Action DialogoTerminado;
+
     private void Awake()
     {
         spriteRendererMonja = GetComponent<SpriteRenderer>();
@@ -37,6 +46,11 @@ public class TextManagerNun : MonoBehaviour
 
     private void Update()
     {
+        if (yaHablo)
+        {
+            return;
+        }
+
         if (elJugadorEstaEnRango && Input.GetKeyDown(KeyCode.E))
         {
             if (!elJugadorEstaHablando)
@@ -140,10 +154,17 @@ public class TextManagerNun : MonoBehaviour
                 dialogoPanel.SetActive(false);
             }
 
-            if (señalDialogo != null && elJugadorEstaEnRango)
+            if (soloUnaVez)
+            {
+                yaHablo = true;
+            }
+
+            if (señalDialogo != null && elJugadorEstaEnRango && !yaHablo)
             {
                 señalDialogo.SetActive(true);
             }
+
+            DialogoTerminado?.Invoke();
         }
     }
 
@@ -171,10 +192,18 @@ public class TextManagerNun : MonoBehaviour
             jugadorEnRango = collision.transform;
             movimientoJugador = collision.GetComponentInParent<Movimiento>();
 
-            if (señalDialogo != null && !elJugadorEstaHablando)
+            if (señalDialogo != null && !elJugadorEstaHablando && !yaHablo)
             {
                 señalDialogo.SetActive(true);
             }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!elJugadorEstaEnRango && collision.CompareTag("Player"))
+        {
+            OnTriggerEnter2D(collision);
         }
     }
 
