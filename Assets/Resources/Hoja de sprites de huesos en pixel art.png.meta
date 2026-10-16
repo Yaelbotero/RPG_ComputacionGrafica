@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 7e0285c9279b6b445b020ed8b3362836
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8419877050823161908
+    second: Hoja de sprites de huesos en pixel art_0
+  - first:
+      213: -103885837586646978
+    second: Hoja de sprites de huesos en pixel art_1
+  - first:
+      213: 4208187031922882366
+    second: Hoja de sprites de huesos en pixel art_2
+  - first:
+      213: 8414203024318376641
+    second: Hoja de sprites de huesos en pixel art_3
+  - first:
+      213: 468829466456759586
+    second: Hoja de sprites de huesos en pixel art_4
+  - first:
+      213: 3450130080125013162
+    second: Hoja de sprites de huesos en pixel art_5
+  - first:
+      213: 8645094559402544240
+    second: Hoja de sprites de huesos en pixel art_6
+  - first:
+      213: -4593942518657430219
+    second: Hoja de sprites de huesos en pixel art_7
+  - first:
+      213: -5552481122643072482
+    second: Hoja de sprites de huesos en pixel art_8
+  - first:
+      213: 2268176994118716984
+    second: Hoja de sprites de huesos en pixel art_9
+  - first:
+      213: -6241185166815886046
+    second: Hoja de sprites de huesos en pixel art_10
+  - first:
+      213: -678305252909853781
+    second: Hoja de sprites de huesos en pixel art_11
+  - first:
+      213: 1990095796893515964
+    second: Hoja de sprites de huesos en pixel art_12
+  - first:
+      213: 941124366225756077
+    second: Hoja de sprites de huesos en pixel art_13
+  - first:
+      213: 1767102110592604793
+    second: Hoja de sprites de huesos en pixel art_14
+  - first:
+      213: 1748648298224977373
+    second: Hoja de sprites de huesos en pixel art_15
+  - first:
+      213: -8491062170770810449
+    second: Hoja de sprites de huesos en pixel art_16
+  - first:
+      213: 6569776389895433608
+    second: Hoja de sprites de huesos en pixel art_17
+  - first:
+      213: 8710306823853492315
+    second: Hoja de sprites de huesos en pixel art_18
+  - first:
+      213: 3395943535420249464
+    second: Hoja de sprites de huesos en pixel art_19
+  - first:
+      213: -4714906395325765985
+    second: Hoja de sprites de huesos en pixel art_20
+  - first:
+      213: -1037786137715788027
+    second: Hoja de sprites de huesos en pixel art_21
+  - first:
+      213: -4617386886770555046
+    second: Hoja de sprites de huesos en pixel art_22
+  - first:
+      213: -2861260193522063979
+    second: Hoja de sprites de huesos en pixel art_23
+  - first:
+      213: -7952392497728986744
+    second: Hoja de sprites de huesos en pixel art_24
+  - first:
+      213: -3985742924188599785
+    second: Hoja de sprites de huesos en pixel art_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 324
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7c835ce66962b80800000000000000
+      internalID: -8419877050823161908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 858
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e383471916cee8ef0800000000000000
+      internalID: -103885837586646978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 613
+        width: 376
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e373b224fcb766a30800000000000000
+      internalID: 4208187031922882366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_3
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 493
+        width: 449
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caa38cf11145c470800000000000000
+      internalID: 8414203024318376641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_4
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 494
+        width: 165
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d14607aed918600800000000000000
+      internalID: 468829466456759586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 498
+        width: 129
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaccdbe370351ef20800000000000000
+      internalID: 3450130080125013162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_6
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 512
+        width: 139
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cc9d6b2bb89f770800000000000000
+      internalID: 8645094559402544240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_7
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 774
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d4cd87e990f30c0800000000000000
+      internalID: -4593942518657430219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_8
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 732
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a2cc656df91f2b0800000000000000
+      internalID: -5552481122643072482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_9
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 712
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ec82675fe2a7f10800000000000000
+      internalID: 2268176994118716984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 469
+        width: 413
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2258082782bd269a0800000000000000
+      internalID: -6241185166815886046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_11
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 568
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3d60f57fc2696f0800000000000000
+      internalID: -678305252909853781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 431
+        width: 266
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb006d2559d3e9b10800000000000000
+      internalID: 1990095796893515964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 484
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafc952ff9b8f0d00800000000000000
+      internalID: 941124366225756077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_14
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 372
+        width: 319
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a17bfc102068810800000000000000
+      internalID: 1767102110592604793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_15
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 17
+        width: 365
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd58acccc52744810800000000000000
+      internalID: 1748648298224977373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 179
+        width: 426
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9d27971ffa92a80800000000000000
+      internalID: -8491062170770810449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 243
+        width: 281
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d277581d88c2b50800000000000000
+      internalID: 6569776389895433608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_18
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 227
+        width: 508
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58c27838e931e870800000000000000
+      internalID: 8710306823853492315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_19
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 55
+        width: 214
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875120a27a0d02f20800000000000000
+      internalID: 3395943535420249464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_20
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 176
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96e3653d99419eb0800000000000000
+      internalID: -4714906395325765985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 29
+        width: 368
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50730a4910b0991f0800000000000000
+      internalID: -1037786137715788027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_22
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 28
+        width: 217
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a578e77271fbbefb0800000000000000
+      internalID: -4617386886770555046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_23
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 33
+        width: 205
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595e62b7303ca48d0800000000000000
+      internalID: -2861260193522063979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 28
+        width: 461
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881e16a282d63a190800000000000000
+      internalID: -7952392497728986744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de huesos en pixel art_25
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 162
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a36b58debcfa8c0800000000000000
+      internalID: -3985742924188599785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hoja de sprites de huesos en pixel art_0: -8419877050823161908
+      Hoja de sprites de huesos en pixel art_1: -103885837586646978
+      Hoja de sprites de huesos en pixel art_10: -6241185166815886046
+      Hoja de sprites de huesos en pixel art_11: -678305252909853781
+      Hoja de sprites de huesos en pixel art_12: 1990095796893515964
+      Hoja de sprites de huesos en pixel art_13: 941124366225756077
+      Hoja de sprites de huesos en pixel art_14: 1767102110592604793
+      Hoja de sprites de huesos en pixel art_15: 1748648298224977373
+      Hoja de sprites de huesos en pixel art_16: -8491062170770810449
+      Hoja de sprites de huesos en pixel art_17: 6569776389895433608
+      Hoja de sprites de huesos en pixel art_18: 8710306823853492315
+      Hoja de sprites de huesos en pixel art_19: 3395943535420249464
+      Hoja de sprites de huesos en pixel art_2: 4208187031922882366
+      Hoja de sprites de huesos en pixel art_20: -4714906395325765985
+      Hoja de sprites de huesos en pixel art_21: -1037786137715788027
+      Hoja de sprites de huesos en pixel art_22: -4617386886770555046
+      Hoja de sprites de huesos en pixel art_23: -2861260193522063979
+      Hoja de sprites de huesos en pixel art_24: -7952392497728986744
+      Hoja de sprites de huesos en pixel art_25: -3985742924188599785
+      Hoja de sprites de huesos en pixel art_3: 8414203024318376641
+      Hoja de sprites de huesos en pixel art_4: 468829466456759586
+      Hoja de sprites de huesos en pixel art_5: 3450130080125013162
+      Hoja de sprites de huesos en pixel art_6: 8645094559402544240
+      Hoja de sprites de huesos en pixel art_7: -4593942518657430219
+      Hoja de sprites de huesos en pixel art_8: -5552481122643072482
+      Hoja de sprites de huesos en pixel art_9: 2268176994118716984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

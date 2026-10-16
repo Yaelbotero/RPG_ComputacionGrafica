@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 1da97fcf21557a74cb056a8baeb9006c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3279042025948327848
+    second: Espejo de pie pixelado invertido_0
+  - first:
+      213: -765130877091443297
+    second: Espejo de pie pixelado invertido_1
+  - first:
+      213: -8446149573274570774
+    second: Espejo de pie pixelado invertido_2
+  - first:
+      213: 4905362075150893733
+    second: Espejo de pie pixelado invertido_3
+  - first:
+      213: 5710650068933478108
+    second: Espejo de pie pixelado invertido_4
+  - first:
+      213: -641157020961312581
+    second: Espejo de pie pixelado invertido_5
+  - first:
+      213: -7196266100671422591
+    second: Espejo de pie pixelado invertido_6
+  - first:
+      213: 2564406889765466492
+    second: Espejo de pie pixelado invertido_7
+  - first:
+      213: 4402192260265898526
+    second: Espejo de pie pixelado invertido_8
+  - first:
+      213: 625991530218046727
+    second: Espejo de pie pixelado invertido_9
+  - first:
+      213: 7400425366598190186
+    second: Espejo de pie pixelado invertido_10
+  - first:
+      213: -2833225927758939780
+    second: Espejo de pie pixelado invertido_11
+  - first:
+      213: 179604614436933442
+    second: Espejo de pie pixelado invertido_12
+  - first:
+      213: -2650761840257325800
+    second: Espejo de pie pixelado invertido_13
+  - first:
+      213: -4639727034723253908
+    second: Espejo de pie pixelado invertido_14
+  - first:
+      213: -4197231479756604999
+    second: Espejo de pie pixelado invertido_15
+  - first:
+      213: -4306475057128753230
+    second: Espejo de pie pixelado invertido_16
+  - first:
+      213: 3222911652127417515
+    second: Espejo de pie pixelado invertido_17
+  - first:
+      213: -2696379606724295603
+    second: Espejo de pie pixelado invertido_18
+  - first:
+      213: -588804870694593494
+    second: Espejo de pie pixelado invertido_19
+  - first:
+      213: 6268351404902913303
+    second: Espejo de pie pixelado invertido_20
+  - first:
+      213: 8762382308690397352
+    second: Espejo de pie pixelado invertido_21
+  - first:
+      213: 8877858343758767959
+    second: Espejo de pie pixelado invertido_22
+  - first:
+      213: 9191348811940497376
+    second: Espejo de pie pixelado invertido_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 375
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850d5c786a08e72d0800000000000000
+      internalID: -3279042025948327848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 29
+        width: 865
+        height: 1203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d08486585b165f0800000000000000
+      internalID: -765130877091443297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1116
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefe62576bf39ca80800000000000000
+      internalID: -8446149573274570774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1116
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2ca0051d8531440800000000000000
+      internalID: 4905362075150893733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1015
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6075b3bfd404f40800000000000000
+      internalID: 5710650068933478108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1012
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb07a5026172a17f0800000000000000
+      internalID: -641157020961312581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 984
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f5b40eb1ab12c90800000000000000
+      internalID: -7196266100671422591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_7
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 971
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71f80cba7a969320800000000000000
+      internalID: 2564406889765466492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 779
+        width: 77
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e127f12798ab71d30800000000000000
+      internalID: 4402192260265898526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 929
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705cc07eaf7ffa800800000000000000
+      internalID: 625991530218046727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 931
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6400ea69a793b660800000000000000
+      internalID: 7400425366598190186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_11
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 931
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79708f970c5ea8d0800000000000000
+      internalID: -2833225927758939780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_12
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 761
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fc88bf1751e7200800000000000000
+      internalID: 179604614436933442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 735
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8152d4f862a963bd0800000000000000
+      internalID: -2650761840257325800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_14
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 691
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c614b8028d06c9fb0800000000000000
+      internalID: -4639727034723253908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_15
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 690
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b93501053070c5c0800000000000000
+      internalID: -4197231479756604999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_16
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 690
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7b2c190c35c34c0800000000000000
+      internalID: -4306475057128753230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_17
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 640
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4a58762151abc20800000000000000
+      internalID: 3222911652127417515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_18
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 578
+        width: 67
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d444791a809849ad0800000000000000
+      internalID: -2696379606724295603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_19
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 614
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c9a38f61524d7f0800000000000000
+      internalID: -588804870694593494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 550
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7151f804468adf650800000000000000
+      internalID: 6268351404902913303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_21
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 401
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a888afd84c3a9970800000000000000
+      internalID: 8762382308690397352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_22
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 182
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757aaf1702d743b70800000000000000
+      internalID: 8877858343758767959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo de pie pixelado invertido_23
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 100
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e70c6eeb0b3e8f70800000000000000
+      internalID: 9191348811940497376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Espejo de pie pixelado invertido_0: -3279042025948327848
+      Espejo de pie pixelado invertido_1: -765130877091443297
+      Espejo de pie pixelado invertido_10: 7400425366598190186
+      Espejo de pie pixelado invertido_11: -2833225927758939780
+      Espejo de pie pixelado invertido_12: 179604614436933442
+      Espejo de pie pixelado invertido_13: -2650761840257325800
+      Espejo de pie pixelado invertido_14: -4639727034723253908
+      Espejo de pie pixelado invertido_15: -4197231479756604999
+      Espejo de pie pixelado invertido_16: -4306475057128753230
+      Espejo de pie pixelado invertido_17: 3222911652127417515
+      Espejo de pie pixelado invertido_18: -2696379606724295603
+      Espejo de pie pixelado invertido_19: -588804870694593494
+      Espejo de pie pixelado invertido_2: -8446149573274570774
+      Espejo de pie pixelado invertido_20: 6268351404902913303
+      Espejo de pie pixelado invertido_21: 8762382308690397352
+      Espejo de pie pixelado invertido_22: 8877858343758767959
+      Espejo de pie pixelado invertido_23: 9191348811940497376
+      Espejo de pie pixelado invertido_3: 4905362075150893733
+      Espejo de pie pixelado invertido_4: 5710650068933478108
+      Espejo de pie pixelado invertido_5: -641157020961312581
+      Espejo de pie pixelado invertido_6: -7196266100671422591
+      Espejo de pie pixelado invertido_7: 2564406889765466492
+      Espejo de pie pixelado invertido_8: 4402192260265898526
+      Espejo de pie pixelado invertido_9: 625991530218046727
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

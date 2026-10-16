@@ -21,6 +21,12 @@ public class NunSigueJugador : MonoBehaviour
 
     private void Awake()
     {
+        // Solo en la escena "Pelea Final", Nun permanece fija y no sigue al personaje.
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Pelea Final")
+        {
+            enabled = false;
+        }
+
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
         if (animator == null) animator = GetComponent<Animator>();
 
