@@ -149,7 +149,8 @@ namespace RPG.UI
             EventosJuego.OnTurnoCambiado += AlCambiarTurno;
             EventosJuego.OnInventarioCambiado += AlCambiarInventario;
             ConfigurarPanelesIniciales();
-            if (modoDemo) IniciarDemo();
+            // La demo solo corre en la escena de vista previa "Interfaz"; en el juego real manda el combate.
+            if (modoDemo && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Interfaz") IniciarDemo();
             else MostrarSolo(Estado.Oculto);
         }
 
@@ -197,6 +198,13 @@ namespace RPG.UI
 
         public void AbrirMenuPrincipal()
         {
+            if (modoObjetivo)
+            {
+                Action<int> cb = alElegirObjetivo;
+                modoObjetivo = false;
+                alElegirObjetivo = null;
+                if (cb != null) cb(-1);
+            }
             MostrarSolo(Estado.Principal);
             if (txtMensaje != null) txtMensaje.text = "¿Qué hará " + nombreHeroe + "?";
             Seleccionar(botonAtacar);
@@ -216,10 +224,116 @@ namespace RPG.UI
             Seleccionar(HayItems() ? botonesItem[0] : botonVolverItems);
         }
 
+        // ---------------------------------------------------------------- Combate real
+
+        public bool HayMensajes { get { return escritor != null || mensajes.Count > 0; } }
+
+        private static string TextoPifia(string formula)
+        {
+            Match m = Regex.Match(formula ?? string.Empty, @"(\d+)\s*[dD]\s*(\d+)");
+            if (!m.Success) return string.Empty;
+            int caras = int.Parse(m.Groups[2].Value);
+            int umbral = DiceSystem.UmbralPifia(caras);
+            return umbral <= 1 ? "Pifia: sale 1" : "Pifia: sale 1-" + umbral;
+        }
+
+        private bool modoObjetivo;
+        private Action<int> alElegirObjetivo;
+
+        /// <summary>Deja la interfaz lista para un combate real (sin demo): vidas, ataques del heroe e inventario.</summary>
+        public void PrepararCombate(string[] nombres, int[] hps, int[] maxs, int hpH, int maxH,
+                                    List<DatosAtaque> ataquesHeroe, List<ItemVista> itemsHeroe)
+        {
+            StopAllCoroutines();
+            escritor = null;
+            mensajes.Clear();
+            turnoDemoEnCurso = false;
+            modoObjetivo = false;
+            alElegirObjetivo = null;
+            modoDemo = false;
+
+            hpHeroe = hpH;
+            hpMaxHeroe = maxH;
+            ActualizarPanelHeroe();
+            if (barraHeroe != null) barraHeroe.fillAmount = maxH > 0 ? (float)hpH / maxH : 0f;
+
+            if (enemigos != null)
+            {
+                for (int i = 0; i < enemigos.Length; i++)
+                {
+                    PanelCombatiente p = enemigos[i];
+                    bool activo = i < nombres.Length;
+                    if (p.raiz != null) p.raiz.SetActive(activo);
+                    if (!activo) continue;
+                    FijarVida(p, nombres[i], hps[i], maxs[i]);
+                    if (p.barra != null) p.barra.fillAmount = p.fillObjetivo;
+                }
+            }
+
+            // El fondo azul oscuro es solo de la vista previa: en el juego real se ve la escena.
+            Transform fondoVistaPrevia = transform.Find("Fondo");
+            if (fondoVistaPrevia != null) fondoVistaPrevia.gameObject.SetActive(false);
+
+            // En el juego real los personajes se ven en la escena: se ocultan los recuadros grises de vista previa.
+            foreach (Transform hijo in GetComponentsInChildren<Transform>(true))
+                if (hijo.name.StartsWith("MarcadorSprite")) hijo.gameObject.SetActive(false);
+
+            ConfigurarAtaques(ataquesHeroe);
+            ConfigurarItems(itemsHeroe);
+            MostrarSolo(Estado.Mensaje);
+        }
+
+        public void SetVidaHeroe(int hp, int max)
+        {
+            hpHeroe = hp;
+            hpMaxHeroe = max;
+            ActualizarPanelHeroe();
+        }
+
+        public void SetVidaEnemigo(int indice, int hp)
+        {
+            if (enemigos == null || indice < 0 || indice >= enemigos.Length) return;
+            PanelCombatiente p = enemigos[indice];
+            FijarVida(p, p.nombre, hp, p.hpMax);
+        }
+
+        public void OcultarTodo() { MostrarSolo(Estado.Oculto); }
+
+        /// <summary>Muestra los enemigos vivos como botones para elegir a quien atacar. Devuelve -1 si se cancela.</summary>
+        public void PedirObjetivo(string[] nombres, int[] hps, int[] maxs, bool[] vivos, Action<int> alElegir)
+        {
+            modoObjetivo = true;
+            alElegirObjetivo = alElegir;
+            MostrarSolo(Estado.Ataques);
+            Button primero = null;
+            for (int i = 0; i < botonesAtaque.Length; i++)
+            {
+                bool existe = i < nombres.Length && vivos[i];
+                botonesAtaque[i].gameObject.SetActive(existe);
+                if (!existe) continue;
+                if (primero == null) primero = botonesAtaque[i];
+                foreach (TextMeshProUGUI t in botonesAtaque[i].GetComponentsInChildren<TextMeshProUGUI>(true))
+                {
+                    if (t.name == "Etiqueta") t.text = nombres[i];
+                    else if (t.name == "Dados") t.text = "HP " + hps[i] + "/" + maxs[i];
+                }
+            }
+            Seleccionar(primero);
+        }
+
         // ---------------------------------------------------------------- Seleccion
 
         private void ElegirAtaque(int indice)
         {
+            if (modoObjetivo)
+            {
+                Action<int> cb = alElegirObjetivo;
+                modoObjetivo = false;
+                alElegirObjetivo = null;
+                MostrarSolo(Estado.Mensaje);
+                if (cb != null) cb(indice);
+                return;
+            }
             if (indice >= ataques.Count) return;
             MostrarSolo(Estado.Mensaje);
             if (AtaqueElegido != null) AtaqueElegido(indice);
@@ -301,11 +415,11 @@ namespace RPG.UI
             {
                 if (sel == botonesAtaque[i].gameObject && i < ataques.Count)
                 {
-                    txtInfoAtaque.text = "Tirada: " + ataques[i].dados + "\nFuerza 23";
+                    txtInfoAtaque.text = "Tirada: " + ataques[i].dados + "\n" + TextoPifia(ataques[i].dados);
                     return;
                 }
             }
-            txtInfoAtaque.text = "Elige un ataque\n[Esc] volver";
+            txtInfoAtaque.text = modoObjetivo ? "Elige el objetivo\n[Esc] volver" : "Elige un ataque\n[Esc] volver";
         }
 
         // ---------------------------------------------------------------- Estados de pantalla
@@ -531,7 +645,7 @@ namespace RPG.UI
             return null;
         }
 
-        private IEnumerator EsperarMensajes()
+        public IEnumerator EsperarMensajes()
         {
             while (escritor != null || mensajes.Count > 0) yield return null;
         }

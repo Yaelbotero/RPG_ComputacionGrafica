@@ -39,6 +39,9 @@ namespace RPG.UI
         public GameObject ayudaVistaPrevia;
 
         private GrupoInterfaz grupoActual;
+
+        /// <summary>Menu de combate del grupo que esta activo en esta escena (null si la escena no tiene combate).</summary>
+        public MenuCombatePokemon MenuActivo { get { return grupoActual != null ? grupoActual.menuCombate : null; } }
         private bool vistaPrevia;
 
         private void Awake()

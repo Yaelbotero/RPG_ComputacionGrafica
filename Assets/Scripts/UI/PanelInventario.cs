@@ -67,6 +67,13 @@ namespace RPG.UI
             }
         }
 
+        // Usa un objeto desde el inventario (solo cuando no hay un combate en curso: ahi se usa desde el menu ITEMS).
+        private void UsarFueraDeCombate(string nombre)
+        {
+            if (CombateUI.Activo || PartyManager.Instance == null) return;
+            PartyManager.Instance.UsarItem(nombre);
+        }
+
         private void ActualizarInventario(List<ItemVista> items)
         {
             if (contenedorItems == null || prefabItemUI == null || items == null) return;
@@ -85,8 +92,25 @@ namespace RPG.UI
                 TextMeshProUGUI txt = obj.GetComponentInChildren<TextMeshProUGUI>();
                 if (txt != null)
                 {
-                    txt.text = $"{item.nombre} x{item.cantidad}";
+                    int cura = PartyManager.Instance != null ? PartyManager.Instance.CuracionDe(item.nombre) : 0;
+                    txt.text = cura > 0 ? $"{item.nombre} x{item.cantidad}  (+{cura} HP)" : $"{item.nombre} x{item.cantidad}";
                     if (fuenteCuerpo != null) txt.font = fuenteCuerpo;
+                }
+
+                // Fuera de combate, al hacer clic en un objeto curativo se usa.
+                if (PartyManager.Instance != null && PartyManager.Instance.CuracionDe(item.nombre) > 0)
+                {
+                    Button boton = obj.GetComponent<Button>();
+                    if (boton == null) boton = obj.AddComponent<Button>();
+                    Image fondo = obj.GetComponent<Image>();
+                    if (fondo == null)
+                    {
+                        fondo = obj.AddComponent<Image>();
+                        fondo.color = new Color(1f, 1f, 1f, 0f);
+                    }
+                    boton.targetGraphic = fondo;
+                    string nombreItem = item.nombre;
+                    boton.onClick.AddListener(() => UsarFueraDeCombate(nombreItem));
                 }
 
                 Transform iconoTransform = obj.transform.Find("Icono");

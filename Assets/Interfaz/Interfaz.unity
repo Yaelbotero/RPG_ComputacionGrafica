@@ -14983,6 +14983,7 @@ MonoBehaviour:
     escenasUnity:
     - Bosque
     - Combate
+    - Pueblo abandonado
     raiz: {fileID: 204833669}
     escenarioNormal: {fileID: 1268451070}
     conversaciones: {fileID: 244150113}
@@ -14992,7 +14993,9 @@ MonoBehaviour:
   - etiqueta: "BOSS y FINAL \xB7 escena por crear"
     parte: 4
     escenasUnity:
-    - Boss
+    - CombateJefes
+    - Pelea Final
+    - Final
     raiz: {fileID: 1850888273}
     escenarioNormal: {fileID: 1186932547}
     conversaciones: {fileID: 511685765}

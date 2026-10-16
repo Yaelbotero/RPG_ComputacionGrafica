@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using RPG.UI;
+using RPG.Flujo;
 
 public class EncounterCombat : MonoBehaviour
 {
@@ -32,6 +34,9 @@ public class EncounterCombat : MonoBehaviour
     public Animator animatorEnemigo1;
     public Animator animatorEnemigo2;
 
+    // Tipos de enemigo que pueden aparecer en el bosque (sin la bruja = Helena).
+    private static readonly int[] TiposBosque = { 0, 1, 3 };
+
     private CharacterData heroe;
     private List<CharacterData> enemigos;
     private List<int> tiposEnemigos;
@@ -46,14 +51,24 @@ public class EncounterCombat : MonoBehaviour
 
     public bool CombateActivo { get; private set; }
 
+    // true cuando la interfaz grafica (menu + dados) maneja el combate.
+    private bool usarUI = false;
+
     void Start()
     {
+        // En la escena de jefes manda BossCombat: este combate del bosque no debe arrancar.
+        if (FindFirstObjectByType<BossCombat>() != null)
+        {
+            enabled = false;
+            return;
+        }
+
         IniciarCombate();
     }
 
     void Update()
     {
-        if (!CombateActivo || Keyboard.current == null)
+        if (!CombateActivo || usarUI || Keyboard.current == null)
             return;
 
         Keyboard teclado = Keyboard.current;
@@ -120,7 +135,8 @@ public class EncounterCombat : MonoBehaviour
         // Sus estadisticas siempre son fijas.
         for (int i = 0; i < cantidad; i++)
         {
-            int tipo = Random.Range(0, 4);
+            // El tipo 2 (la bruja) es Helena, enemiga especial de la pelea final: no sale en el bosque.
+            int tipo = TiposBosque[Random.Range(0, TiposBosque.Length)];
 
             CharacterData enemigo =
                 CharacterDatabase.CreateForestEnemy(tipo);
@@ -144,7 +160,126 @@ public class EncounterCombat : MonoBehaviour
         MostrarEnemigos();
         PartyManager.Instance.MostrarInventario();
 
-        StartCoroutine(SistemaTurnos());
+        StartCoroutine(ArrancarCombate());
+    }
+
+    IEnumerator ArrancarCombate()
+    {
+        yield return StartCoroutine(CombateUI.Preparar(
+            heroe, NombresVisibles(), VidasActuales(), VidasMaximas(),
+            enemigos.Count > 1
+                ? "¡Dos enemigos del bosque bloquean el camino!"
+                : "¡Un enemigo del bosque bloquea el camino!"));
+
+        usarUI = CombateUI.Activo;
+
+        if (usarUI)
+        {
+            // Estilo Pokemon: heroe abajo a la izquierda, enemigos arriba a la derecha.
+            GameObject personaje = GameObject.Find("Personaje");
+            Transform[] visuales = enemigos.Count > 1
+                ? new Transform[] { enemigoVisual1.transform, enemigoVisual2.transform }
+                : new Transform[] { enemigoVisual1.transform };
+            CombateUI.ColocarPokemon(
+                personaje != null ? personaje.transform : null, visuales,
+                enemigos.Count > 1
+                    ? new float[] { 0.9f, 0.9f }
+                    : new float[] { 1f });
+        }
+
+        yield return StartCoroutine(SistemaTurnos());
+    }
+
+    string[] NombresVisibles()
+    {
+        // Se quita el prefijo "Enemigo " para que el nombre quepa en el recuadro.
+        string[] n = new string[enemigos.Count];
+        for (int i = 0; i < n.Length; i++)
+        {
+            string baseNombre = enemigos[i].characterName.Replace("Enemigo ", "");
+            n[i] = enemigos.Count > 1
+                ? baseNombre + " " + (char)('A' + i)
+                : baseNombre;
+        }
+        return n;
+    }
+
+    int[] VidasActuales()
+    {
+        int[] v = new int[enemigos.Count];
+        for (int i = 0; i < v.Length; i++) v[i] = enemigos[i].currentHealth;
+        return v;
+    }
+
+    int[] VidasMaximas()
+    {
+        int[] v = new int[enemigos.Count];
+        for (int i = 0; i < v.Length; i++) v[i] = enemigos[i].maxHealth;
+        return v;
+    }
+
+    bool[] EnemigosVivos()
+    {
+        bool[] v = new bool[enemigos.Count];
+        for (int i = 0; i < v.Length; i++) v[i] = enemigos[i].IsAlive;
+        return v;
+    }
+
+    // Ataque con tirada de dados animada (pifia / exito / dano).
+IEnumerator AtacarConDados(
+        CharacterData atacante, string nombreAtacante,
+        CharacterData objetivo, string nombreObjetivo,
+        string nombreAtaque, string formula, float velocidad)
+    {
+        ResultadoDado r = DiceSystem.TirarAtaque(formula);
+
+        yield return StartCoroutine(CombateUI.Tirada(
+            nombreAtacante, nombreAtaque, r, velocidad));
+
+        if (r.pifia)
+        {
+            Debug.Log(nombreAtacante + " pifia (" + r.tiradaPrincipal + ")");
+            EventosJuego.NotificarPifia(nombreAtacante);
+        }
+
+        // Embestida + golpe/caida, aplicando el dano justo en el impacto.
+        yield return StartCoroutine(RPG.UI.CombateEscena.Ataque(
+            VisualDe(atacante), VisualDe(objetivo), !r.pifia,
+            () =>
+            {
+                if (!r.pifia)
+                {
+                    objetivo.TakeDamage(r.danio);
+                    Debug.Log(nombreAtacante + " causa " + r.danio + " a " + nombreObjetivo);
+                    EventosJuego.NotificarDanoRecibido(nombreObjetivo, r.danio);
+                }
+                CombateUI.ActualizarVidas(heroe, enemigos);
+                return !objetivo.IsAlive;
+            }));
+
+        // Un enemigo derrotado puede soltar una pocion o una manzana.
+        if (!objetivo.IsAlive && objetivo != heroe && PartyManager.Instance != null)
+        {
+            string botin = PartyManager.Instance.SoltarBotin();
+            if (botin != null)
+                CombateUI.Mensaje(nombreObjetivo + " soltó: " + botin + " (+1 al inventario).");
+        }
+
+        CombateUI.ActualizarVidas(heroe, enemigos);
+        yield return StartCoroutine(CombateUI.EsperarMensajes());
+    }
+
+    // Objeto visual (sprite) de un personaje del combate.
+    Transform VisualDe(CharacterData c)
+    {
+        if (c == heroe)
+        {
+            GameObject p = GameObject.Find("Personaje");
+            return p != null ? p.transform : null;
+        }
+        int i = enemigos.IndexOf(c);
+        SpriteRenderer v = i >= 0 ? ObtenerVisual(i) : null;
+        return v != null ? v.transform : null;
     }
 
     void ConfigurarEnemigosVisuales()
@@ -205,66 +340,95 @@ public class EncounterCombat : MonoBehaviour
             ataqueElegido = -1;
             objetivoElegido = -1;
 
-            Debug.Log("TURNO DEL HEROE");
-            Debug.Log("ELIGE UN ATAQUE:");
-
-            for (int i = 0; i < heroe.attacks.Count; i++)
+            if (usarUI)
             {
-                Debug.Log((i + 1) + ". " +
-                    heroe.attacks[i]);
-            }
+                // TURNO DEL HEROE con menu e interfaz.
+                CombateUI.Accion accion = new CombateUI.Accion();
 
-            estado = 1;
+                yield return StartCoroutine(CombateUI.ElegirAccion(
+                    accion, heroe, NombresVisibles(), VidasActuales(),
+                    VidasMaximas(), EnemigosVivos(), true));
 
-            yield return new WaitUntil(
-                () => ataqueElegido >= 0);
-
-            estado = 0;
-
-            string ataque = heroe.attacks[ataqueElegido];
-
-            // Contar enemigos vivos.
-            int cantidadVivos = 0;
-            int unicoVivo = -1;
-
-            for (int i = 0; i < enemigos.Count; i++)
-            {
-                if (enemigos[i].IsAlive)
+                // Si uso un objeto (tipo 1) ya se curo y pierde el turno.
+                if (accion.tipo == 0)
                 {
-                    cantidadVivos++;
-                    unicoVivo = i;
-                }
-            }
+                    ataqueElegido = accion.indice;
+                    objetivoElegido = accion.objetivo;
 
-            if (cantidadVivos == 1)
-            {
-                objetivoElegido = unicoVivo;
+                    CharacterData objetivoUI = enemigos[objetivoElegido];
+                    string[] nombres = NombresVisibles();
+
+                    yield return StartCoroutine(AtacarConDados(
+                        heroe, "Héroe", objetivoUI, nombres[objetivoElegido],
+                        "Ataque " + (ataqueElegido + 1),
+                        heroe.attacks[ataqueElegido], 1f));
+
+                    yield return StartCoroutine(AnimarResultadoEnemigo(
+                        objetivoElegido, !objetivoUI.IsAlive));
+                }
             }
             else
             {
-                Debug.Log("ELIGE OBJETIVO:");
-                MostrarEnemigos();
-                Debug.Log("Pulsa 1 o 2.");
+                Debug.Log("TURNO DEL HEROE");
+                Debug.Log("ELIGE UN ATAQUE:");
 
-                estado = 2;
+                for (int i = 0; i < heroe.attacks.Count; i++)
+                {
+                    Debug.Log((i + 1) + ". " + heroe.attacks[i]);
+                }
+
+                estado = 1;
 
                 yield return new WaitUntil(
-                    () => objetivoElegido >= 0);
+                    () => ataqueElegido >= 0);
 
                 estado = 0;
+
+                string ataque = heroe.attacks[ataqueElegido];
+
+                // Contar enemigos vivos.
+                int cantidadVivos = 0;
+                int unicoVivo = -1;
+
+                for (int i = 0; i < enemigos.Count; i++)
+                {
+                    if (enemigos[i].IsAlive)
+                    {
+                        cantidadVivos++;
+                        unicoVivo = i;
+                    }
+                }
+
+                if (cantidadVivos == 1)
+                {
+                    objetivoElegido = unicoVivo;
+                }
+                else
+                {
+                    Debug.Log("ELIGE OBJETIVO:");
+                    MostrarEnemigos();
+                    Debug.Log("Pulsa 1 o 2.");
+
+                    estado = 2;
+
+                    yield return new WaitUntil(
+                        () => objetivoElegido >= 0);
+
+                    estado = 0;
+                }
+
+                CharacterData objetivo =
+                    enemigos[objetivoElegido];
+
+                // ATAQUE DEL HEROE
+                Atacar(heroe, objetivo, ataque);
+
+                // Hurt si sobrevive, Death si muere.
+                yield return StartCoroutine(
+                    AnimarResultadoEnemigo(
+                        objetivoElegido,
+                        !objetivo.IsAlive));
             }
-
-            CharacterData objetivo =
-                enemigos[objetivoElegido];
-
-            // ATAQUE DEL HEROE
-            Atacar(heroe, objetivo, ataque);
-
-            // Hurt si sobrevive, Death si muere.
-            yield return StartCoroutine(
-                AnimarResultadoEnemigo(
-                    objetivoElegido,
-                    !objetivo.IsAlive));
 
             if (!HayEnemigosVivos())
                 break;
@@ -289,7 +453,17 @@ public class EncounterCombat : MonoBehaviour
                 yield return new WaitForSeconds(
                     Mathf.Max(0f, esperaAnimacionAtaque));
 
-                Atacar(enemigo, heroe, enemigo.attacks[0]);
+                if (usarUI)
+                {
+                    yield return StartCoroutine(AtacarConDados(
+                        enemigo, NombresVisibles()[i],
+                        heroe, "Héroe",
+                        "Ataque", enemigo.attacks[0], 1.6f));
+                }
+                else
+                {
+                    Atacar(enemigo, heroe, enemigo.attacks[0]);
+                }
 
                 yield return new WaitForSeconds(
                     Mathf.Max(0f, tiempoEntreTurnos));
@@ -428,7 +602,13 @@ public class EncounterCombat : MonoBehaviour
         {
             Debug.Log("=== VICTORIA ===");
 
-            PartyManager.Instance.AgregarRecompensa();
+            if (usarUI)
+            {
+                CombateUI.Mensaje("¡Victoria!");
+                yield return StartCoroutine(CombateUI.EsperarMensajes());
+            }
+
+            if (!usarUI) PartyManager.Instance.AgregarRecompensa();
             EncounterManager.RegistrarVictoria();
 
             Debug.Log("Vida conservada: " +
@@ -438,12 +618,26 @@ public class EncounterCombat : MonoBehaviour
             yield return new WaitForSeconds(
                 Mathf.Max(0f, esperaAlFinalizar));
 
+            if (usarUI) CombateUI.Terminar(true);
+
             SceneManager.LoadScene(escenaExploracion);
         }
         else
         {
             Debug.Log("=== DERROTA ===");
             Debug.Log("FIN DE LA PARTIDA");
+
+            if (usarUI)
+            {
+                CombateUI.Mensaje("Héroe ha caído... Fin de la partida.");
+                yield return StartCoroutine(CombateUI.EsperarMensajes());
+                yield return new WaitForSeconds(1f);
+                CombateUI.Terminar(false);
+            }
+
+            PartyManager.Instance.ReiniciarPartida();
+            EncounterManager.ReiniciarEncuentros();
+            SceneManager.LoadScene("Menu");
         }
     }
 }

@@ -60,9 +60,9 @@ public static class ConstructorInterfaz
         GrupoInterfaz g2 = CrearGrupo(raiz.transform, "ESCENA 2 · Pueblo Mañana", ParteJuego.Escena2_PuebloManana,
             new[] { "Pueblo Mañana" }, "Pueblo de mañana · Escena 2", false, false, Conversaciones(6, 10));
         GrupoInterfaz g3 = CrearGrupo(raiz.transform, "ESCENA 3 · Bosque (encuentros y combates)", ParteJuego.Escena3_Bosque,
-            new[] { "Bosque", "Combate" }, "Bosque · Escena 3", true, false, Conversaciones(11, 12));
+            new[] { "Bosque", "Combate", "Pueblo abandonado" }, "Bosque · Escena 3", true, false, Conversaciones(11, 12));
         GrupoInterfaz g4 = CrearGrupo(raiz.transform, "BOSS y FINAL · escena por crear", ParteJuego.Boss_Final,
-            new[] { "Boss" }, "Guarida de Lupus · Boss y final", true, true, Conversaciones(13, 15));
+            new[] { "CombateJefes", "Pelea Final", "Final" }, "Guarida de Lupus · Boss y final", true, true, Conversaciones(13, 15));
 
         // ---------------- Siempre disponibles
         GameObject menu = Vacio("MENÚ · disponible en cualquier momento de la partida", raiz.transform);
@@ -619,6 +619,11 @@ public static class ConstructorInterfaz
             "Assets/Scenes/Juego Pueblo.unity",
             "Assets/Scenes/Pueblo Mañana.unity",
             "Assets/Scenes/Bosque.unity",
+            "Assets/Scenes/Pueblo abandonado.unity",
+            "Assets/Scenes/Combate.unity",
+            "Assets/Scenes/CombateJefes.unity",
+            "Assets/Scenes/Pelea Final.unity",
+            "Assets/Scenes/Final.unity",
             "Assets/Interfaz/Interfaz.unity"
         };
         List<EditorBuildSettingsScene> lista = new List<EditorBuildSettingsScene>();
