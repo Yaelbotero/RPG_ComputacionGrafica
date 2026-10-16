@@ -11,6 +11,9 @@ public class ParalaxMove : MonoBehaviour
     [SerializeField, Range(0f, 1f)]
     private float velocidadRelativa = 0.6f;
 
+    // true: capa Tiled que se reubica en saltos de un tile. false: objeto unico (p. ej. un edificio) que solo se desplaza.
+    [SerializeField] private bool repetir = true;
+
     private Transform camara;
     private float alturaFija;
     private float anchoMundo;
@@ -38,14 +41,17 @@ public class ParalaxMove : MonoBehaviour
     // ancho de tile (el patron es identico), asi nunca quedan huecos ni se solapan imagenes.
     private void LateUpdate()
     {
-        if (camara == null || anchoMundo <= 0f)
+        if (camara == null || (repetir && anchoMundo <= 0f))
         {
             return;
         }
 
         float camX = camara.position.x;
         float x = xInicial + (camX - camXInicial) * (1f - velocidadRelativa);
-        x += anchoMundo * Mathf.Round((camX - x) / anchoMundo);
+        if (repetir)
+        {
+            x += anchoMundo * Mathf.Round((camX - x) / anchoMundo);
+        }
 
         transform.position = new Vector3(x, alturaFija, transform.position.z);
     }

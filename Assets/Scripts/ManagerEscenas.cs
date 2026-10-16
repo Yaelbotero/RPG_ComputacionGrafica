@@ -29,4 +29,25 @@ public class ManagerEscenas : MonoBehaviour
     {
         SceneManager.LoadScene("Pueblo Mañana", LoadSceneMode.Single);
     }
+
+    public void PuebloAbandonado()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("ManagerEscenas: Cargando escena 'Pueblo abandonado'...");
+        SceneManager.LoadScene("Pueblo abandonado", LoadSceneMode.Single);
+    }
+
+    public void Final()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("ManagerEscenas: Cargando escena 'Final'...");
+        SceneManager.LoadScene("Final", LoadSceneMode.Single);
+    }
+
+    public void PeleaFinal()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("ManagerEscenas: Cargando escena 'Pelea Final'...");
+        SceneManager.LoadScene("Pelea Final", LoadSceneMode.Single);
+    }
 }

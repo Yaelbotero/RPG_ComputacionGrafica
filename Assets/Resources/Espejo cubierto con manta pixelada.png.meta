@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 878afa2b2038ca44e913651a663ec5c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9033236601334169420
+    second: Espejo cubierto con manta pixelada_0
+  - first:
+      213: 1470126681490820434
+    second: Espejo cubierto con manta pixelada_1
+  - first:
+      213: -7795391751212902141
+    second: Espejo cubierto con manta pixelada_2
+  - first:
+      213: 2952658067750259879
+    second: Espejo cubierto con manta pixelada_3
+  - first:
+      213: -6981439291489949877
+    second: Espejo cubierto con manta pixelada_4
+  - first:
+      213: 3022352510177150934
+    second: Espejo cubierto con manta pixelada_5
+  - first:
+      213: -7753994654690123524
+    second: Espejo cubierto con manta pixelada_6
+  - first:
+      213: 5783054929695899258
+    second: Espejo cubierto con manta pixelada_7
+  - first:
+      213: -2674161178275919644
+    second: Espejo cubierto con manta pixelada_8
+  - first:
+      213: -501756343550007812
+    second: Espejo cubierto con manta pixelada_9
+  - first:
+      213: -2719208725348013575
+    second: Espejo cubierto con manta pixelada_10
+  - first:
+      213: 4110431895739736670
+    second: Espejo cubierto con manta pixelada_11
+  - first:
+      213: -4046246618717114553
+    second: Espejo cubierto con manta pixelada_12
+  - first:
+      213: 6581898829335567437
+    second: Espejo cubierto con manta pixelada_13
+  - first:
+      213: -7859207744216071748
+    second: Espejo cubierto con manta pixelada_14
+  - first:
+      213: -4679721972087116084
+    second: Espejo cubierto con manta pixelada_15
+  - first:
+      213: -6808101796921011873
+    second: Espejo cubierto con manta pixelada_16
+  - first:
+      213: 1802403943098406124
+    second: Espejo cubierto con manta pixelada_17
+  - first:
+      213: -9178644255518799226
+    second: Espejo cubierto con manta pixelada_18
+  - first:
+      213: -8755464018170257318
+    second: Espejo cubierto con manta pixelada_19
+  - first:
+      213: -7351909146405782140
+    second: Espejo cubierto con manta pixelada_20
+  - first:
+      213: 3772503558207035804
+    second: Espejo cubierto con manta pixelada_21
+  - first:
+      213: -6399512594430679108
+    second: Espejo cubierto con manta pixelada_22
+  - first:
+      213: 223096976398629329
+    second: Espejo cubierto con manta pixelada_23
+  - first:
+      213: 6019846803234369882
+    second: Espejo cubierto con manta pixelada_24
+  - first:
+      213: 7292640884706791943
+    second: Espejo cubierto con manta pixelada_25
+  - first:
+      213: -135696563644037552
+    second: Espejo cubierto con manta pixelada_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1279
+        width: 102
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f749a24d08c5d70800000000000000
+      internalID: 9033236601334169420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 31
+        width: 829
+        height: 1485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d85118d60f66410800000000000000
+      internalID: 1470126681490820434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1253
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309d1f7018431d390800000000000000
+      internalID: -7795391751212902141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1236
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac02776ed2f9f820800000000000000
+      internalID: 2952658067750259879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1232
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4769c124f1fc1f90800000000000000
+      internalID: -6981439291489949877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1201
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d78e1b489d81f920800000000000000
+      internalID: 3022352510177150934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1085
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0eae8a1f6446490800000000000000
+      internalID: -7753994654690123524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1045
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e781191d9814050800000000000000
+      internalID: 5783054929695899258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1045
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e849b0a39873ead0800000000000000
+      internalID: -2674161178275919644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 927
+        width: 61
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf527e293476909f0800000000000000
+      internalID: -501756343550007812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 901
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f92d7f321e634ad0800000000000000
+      internalID: -2719208725348013575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 839
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52a00bf7003b0930800000000000000
+      internalID: 4110431895739736670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 655
+        width: 79
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fadb16328d8d7c0800000000000000
+      internalID: -4046246618717114553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 799
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c1b16ec1a975b50800000000000000
+      internalID: 6581898829335567437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 623
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1800e423c7ee290800000000000000
+      internalID: -7859207744216071748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_15
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 607
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce282e19a94e0fb0800000000000000
+      internalID: -4679721972087116084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_16
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 495
+        width: 29
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5113df8c73c481a0800000000000000
+      internalID: -6808101796921011873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_17
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 503
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4d42236dc630910800000000000000
+      internalID: 1802403943098406124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 387
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a4f1e1ea7ee9080800000000000000
+      internalID: -9178644255518799226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_19
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 404
+        width: 33
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a506f392dd75e7680800000000000000
+      internalID: -8755464018170257318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_20
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 391
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48db98b5595c8f990800000000000000
+      internalID: -7351909146405782140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_21
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 337
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99d3d4afff9a5430800000000000000
+      internalID: 3772503558207035804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_22
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 303
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb72251933d5037a0800000000000000
+      internalID: -6399512594430679108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_23
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 303
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d934bc9489981300800000000000000
+      internalID: 223096976398629329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 268
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a513e05e5caca8350800000000000000
+      internalID: 6019846803234369882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 177
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702507f1f3aa43560800000000000000
+      internalID: 7292640884706791943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espejo cubierto con manta pixelada_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 79
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05681ceb1b8ed1ef0800000000000000
+      internalID: -135696563644037552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Espejo cubierto con manta pixelada_0: 9033236601334169420
+      Espejo cubierto con manta pixelada_1: 1470126681490820434
+      Espejo cubierto con manta pixelada_10: -2719208725348013575
+      Espejo cubierto con manta pixelada_11: 4110431895739736670
+      Espejo cubierto con manta pixelada_12: -4046246618717114553
+      Espejo cubierto con manta pixelada_13: 6581898829335567437
+      Espejo cubierto con manta pixelada_14: -7859207744216071748
+      Espejo cubierto con manta pixelada_15: -4679721972087116084
+      Espejo cubierto con manta pixelada_16: -6808101796921011873
+      Espejo cubierto con manta pixelada_17: 1802403943098406124
+      Espejo cubierto con manta pixelada_18: -9178644255518799226
+      Espejo cubierto con manta pixelada_19: -8755464018170257318
+      Espejo cubierto con manta pixelada_2: -7795391751212902141
+      Espejo cubierto con manta pixelada_20: -7351909146405782140
+      Espejo cubierto con manta pixelada_21: 3772503558207035804
+      Espejo cubierto con manta pixelada_22: -6399512594430679108
+      Espejo cubierto con manta pixelada_23: 223096976398629329
+      Espejo cubierto con manta pixelada_24: 6019846803234369882
+      Espejo cubierto con manta pixelada_25: 7292640884706791943
+      Espejo cubierto con manta pixelada_26: -135696563644037552
+      Espejo cubierto con manta pixelada_3: 2952658067750259879
+      Espejo cubierto con manta pixelada_4: -6981439291489949877
+      Espejo cubierto con manta pixelada_5: 3022352510177150934
+      Espejo cubierto con manta pixelada_6: -7753994654690123524
+      Espejo cubierto con manta pixelada_7: 5783054929695899258
+      Espejo cubierto con manta pixelada_8: -2674161178275919644
+      Espejo cubierto con manta pixelada_9: -501756343550007812
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
